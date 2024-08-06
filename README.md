@@ -8,7 +8,7 @@
 poetry install
 
 # aktywacja środowiska
-source .venv/bin/activate
+poetry shell
 
 # uruchom serwer z docami - żeby mieć podgląd lokalnie
 mkdocs serve
