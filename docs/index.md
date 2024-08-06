@@ -8,3 +8,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Jak zainstalować i skonfugurować conda](./pages/conda.md)
 - [Problemy z biblioteką `date-a-scientist`](./pages/date_a_scientist.md)
 - [Problamy z Jupyter Lab / Notebooki](./pages/jupyter_lab.md)
+- [Problemy z Google Meet](./pages/google_meet.md)
