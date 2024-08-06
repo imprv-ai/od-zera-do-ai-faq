@@ -10,7 +10,7 @@ poetry install
 # aktywacja środowiska
 poetry shell
 
-# uruchom serwer z docami - żeby mieć podgląd lokalnie
+# uruchom serwer z docsami - żeby mieć podgląd lokalnie
 mkdocs serve
 ```
 
