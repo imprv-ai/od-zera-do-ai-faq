@@ -13,3 +13,7 @@ repo_url: https://github.com/imprv-ai/od-zera-do-ai-faq
 # Configuration
 theme:
   name: material
+
+markdown_extensions:
+  - toc:
+      permalink: true
