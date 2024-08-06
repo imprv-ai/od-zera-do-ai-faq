@@ -1,0 +1,15 @@
+# Project information
+site_name: FAQ
+site_url: https://faq-od-zera-do-ai.github.io/
+site_author: IMPRV.ai dev team and supporters
+site_description: >-
+  Strona zawierająca zbiór tutoriali i instrukcji pozwalających na zaadresowanie problemów technicznych, na które
+  napotykają uczestnicy kursu `Od zera do AI`.
+
+# Repository
+repo_name: imprv-ai/od-zera-do-ai-faq
+repo_url: https://github.com/imprv-ai/od-zera-do-ai-faq
+
+# Configuration
+theme:
+  name: material
