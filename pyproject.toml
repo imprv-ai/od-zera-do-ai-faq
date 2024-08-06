@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "od-zera-do-ai-faq"
+version = "0.1.0"
+description = ""
+authors = ["Maciej Sobczak <964938+maciejATcosphere@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.6.0"
+mkdocs-material = "^9.5.31"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
