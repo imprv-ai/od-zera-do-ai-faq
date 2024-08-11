@@ -9,4 +9,5 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Problamy z Jupyter Lab / Notebooki](./pages/jupyter_lab.md)
 - [Jak zainstalować i skonfigurować conda](./pages/conda.md)
 - [Błędy w Conda - Przyczyny i rozwiązania](./pages/conda_errors.md)
+- [Visual Studio Code](./pages/vscode.md)
 - [Problemy z Google Meet](./pages/google_meet.md)
