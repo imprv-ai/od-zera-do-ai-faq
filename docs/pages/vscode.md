@@ -6,7 +6,7 @@
 * po kliknięciu rozpocznie się pobieranie instalatora
 * uruchom instalator
 * postępuj zgodnie z instrukcjami na ekranie
-* pamiętaj aby utworzyć skrót na pulpicie
+* pamiętaj, aby utworzyć skrót na pulpicie
 
 # Jak zapisywać zmiany w pliku?
 
