@@ -12,3 +12,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Visual Studio Code](./pages/vscode.md)
 - [Problemy z Google Meet](./pages/google_meet.md)
 - [Problemy z OpenAI](./pages/open_ai.md)
+- [Problemy ze Streamlit Community Cloud](./pages/streamlit_community_cloud.md)
