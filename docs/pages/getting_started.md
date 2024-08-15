@@ -10,7 +10,7 @@ Mogą one występować w postaci:
 
 - plików do pobrania (po naciśnięciu rozpocznie się proces pobierania na Wasz komputer)
 
-## Tip 1: Gdzie zapisywać materiały?
+## Tip 1. Gdzie zapisywać materiały?
 
 Z czasem trwania kursu, plików i materiałów będzie coraz więcej. Dlatego zadbaj od początku o zbieranie plików w jednym folderze, z podziałem na moduły.
 
@@ -39,7 +39,7 @@ Instrukcja:
 
     ![](./assets/getting_started__tip_1__inner_directory.png)
 
-## Tip 2 Zapisywanie stron do paska zakładek
+## Tip 2. Zapisywanie stron do paska zakładek
 
 W poszczególnych lekcjach będą pojawiały się linki do stron internetowych. Do niektórych stron będziemy często wracać w trakcie trwania kursu. Dlatego polecamy, abyś od początku zapisywał/zapisywała sobie te strony w pasku zakładek w przeglądarce, lub w folderze zakładek w przeglądarce. Dzięki temu, będziesz miał/miała je pod ręką. 
 
@@ -76,4 +76,107 @@ W poszczególnych lekcjach będą pojawiały się linki do stron internetowych. 
 
     Zapisuj sobie wszystkie ważne linki z kursu, tak abyś miał/miała je zawsze pod ręką.
 
-    ![](./assets/getting_started__tip_2__bookmarsk_folder.png)     
+    ![](./assets/getting_started__tip_2__bookmarsk_folder.png)
+
+## Tip 3. Kolejność lekcji na platformie
+
+Jak przechodzić lekcje chronologicznie?
+
+Pod każdą lekcją widnieje spis zawartości kursu. Możesz tam zobaczyć, w którym miejscu aktualnie się znajdujesz (zaznaczone na szaro), ile jeszcze przed Tobą, a ile za. Kolejność lekcji wypisana jest w dwóch pionowych kolumnach. Przejdź najpierw całą lewą kolumnę (od góry do dołu), a potem całą prawą kolumnę. 
+    
+1. Chcąc przejść chronologicznie do kolejnej lekcji, naciśnij na tę, która jest pod spodem.
+    
+    ![](./assets/getting_started__tip_3__lessons_sequence.png)
+    
+2. Innym sposobem na przechodzenie do następnej lekcji w odpowiedniej kolejności jest naciśnięcie przycisku **Następna** w prawym rogu nad filmem.
+    
+    ![](./assets/getting_started__tip_3__nex_lesson.png)
+
+## Tip 4. Jak pracować z lekcjami?
+
+1. Tryb - oglądanie, słuchanie, czytanie.
+
+    Możesz po prostu oglądać filmy i czytać treści zamieszczone pod filmami. Po każdym ważnym temacie czeka na Ciebie film powtórkowy **Flashcards**, który również możesz oglądać i na głos odpowiadać na pytania. Po niektórych działach będą **Zadania domowe**, dzięki którym możesz przećwiczyć zdobytą wiedzę.
+
+2. Tryb - ćwiczenie na równi z filmem.
+
+    Pod filmem i opisem załączone są materiały (pliki, linki), używane w danej lekcji. Możesz je pobrać, otworzyć i pracować na równi z filmem instruktażowym.
+
+    Kliknij w link, zacznie się pobieranie pliku:
+
+    ![](./assets/getting_started__tip_4__download_attachment.png)
+
+    Następnie ustaw okna tak, aby po jednej stronie widzieć okno przeglądarki z filmem z lekcji, a po drugiej stronie otwarty plik z pobranym materiałem z tej lekcji (np. z Notebookiem). 
+    Najedź kursorem na otwarty plik w przeglądarce > naciśnij prawym przyciskiem myszy > wybierz **Przenieś kartę do innego okna** > **Nowe okno**
+
+    ![](./assets/getting_started__tip_4__open_in_new_window.png)
+
+    Następnie naciśnij ikonę kwadratu w prawych górnych rogach okien przeglądarek i ustaw sobie okno z filmem po jednej stronie, a z materiałem po drugiej. 
+
+    ![](./assets/getting_started__tip_4__split_screen.png)
+
+    W ten sposób możesz jednocześnie oglądać film i samodzielnie uruchamiać procesy, testować - bawić się kodem i funkcjami.
+
+    ![](./assets/getting_started__tip_4__watch_and_learn.png)
+
+    Dodatkowo, rozwiązując kilka lekcji z rzędu, możesz łatwo przenosić i otwierać kolejne pobrane pliki:
+
+    Pobierz plik > naciśnij ikonę **Pobrane pliki** > wybierz najnowszy pobrany plik, złap go i przenieś do drzewa plików w notebooku
+
+    ![](./assets/getting_started__tip_4__easy_download.png)
+
+## Tip 5. Jak zrobić screena
+
+Screen - elektroniczny zapis, zrzut obrazu aktualnie wyświetlanego na ekranie komputera. To tak jakby zrobić zdjęcie tego co widzimy na naszym komputerze/monitorze. Screen można zapisać jako plik, można go do kogoś przesłać, coś na nim zaznaczyć, narysować. 
+Robienie screenów będzie przydatne w kursie, aby pokazywać zadania domowe albo formułować pytania, zgłaszać problemy.
+
+1. Jak zrobić screena - narzędzie wycinanie.
+
+    W miejsce wyszukiwania na pasku zadań wpisz **Narzędzie Wycinanie**, kliknij w nie
+
+    ![](./assets/getting_started__tip_5__snipping_tool.png)
+
+    Uruchamia się **Narzędzie Wycinanie**
+
+    ![](./assets/getting_started__tip_5__snipping_tool_panel.png) 
+
+    Możesz kliknąć w przycisk **Nowy** albo użyć skrótu klawiszowego **Logo Windows + Shift + S**, następnie zaznacz myszką obszar, który chcesz wyciąć. 
+    
+    To widok pulpitu i zaznaczenie obszaru:
+
+    ![](./assets/getting_started__tip_5__mark_the_area.png) 
+
+    A tak widać, uzyskanego przez zaznaczenie, screena w **Narzędziu Wycinania**
+
+    ![](./assets/getting_started__tip_5__settings.png) 
+
+    Sprawdź ustawienia Twojego Narzędzia Wycinania, aby wiedzieć gdzie będą zapisywały się Twoje screeny.
+
+    ![](./assets/getting_started__tip_5__set.png) 
+
+    Przy takim ustawieniu, screeny będą trafiały do **Obrazy** > **Zrzuty ekranu**   
+
+    ![](./assets/getting_started__tip_5__where_files.png)
+ 
+
+    W Narzędziu Wycinanie możesz edytować Twojego screena, rysować po nim, zaznaczać, podkreślać, robić strzałki.
+
+    ![](./assets/getting_started__tip_5__marking.png)
+
+    Możesz wybrać kolor zaznaczania i rozmiar lini.
+    
+    ![](./assets/getting_started__tip_5__draw.png)
+
+ 
+
+
+
+
+
+
+
+
+
+       
+
+
