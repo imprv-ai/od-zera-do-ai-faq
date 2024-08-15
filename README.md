@@ -48,4 +48,4 @@ git push -u origin nazwa_problemu_nad_ktorym_pracujesz
 git push
 ```
 
-Teraz należy ztworzyć Pull Request. Można to zrobić z poziomu strony GitHub
+Teraz należy stworzyć Pull Request. Można to zrobić z poziomu strony GitHub
