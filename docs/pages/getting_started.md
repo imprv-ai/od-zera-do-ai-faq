@@ -10,7 +10,62 @@ Mogą one występować w postaci:
 
 - plików do pobrania (po naciśnięciu rozpocznie się proces pobierania na Wasz komputer)
 
-## Tip 1. Gdzie zapisywać materiały?
+!!! info "Gdzie szukać pomocy w razie problemu?"
+
+    W przypadku wystąpienia jakichkolwiek trudności, stworzyliśmy i stale aktualizujemy dla Was sekcję 
+    
+    **[FAQ - zbiór najczęściej zadawanych pytań](/od-zera-do-ai-faq/#pytania-odpowiedzi)** 
+    
+    Znajdziecie tam przykłady problemów wraz z wytłumaczeniem i dokładną instrukcją postępowania.
+## Tip 1. Jak pracować z lekcjami?
+
+
+1. Tryb - oglądanie, słuchanie, czytanie.
+
+    Możesz po prostu oglądać filmy i czytać treści zamieszczone pod filmami. Po każdym ważnym temacie czeka na Ciebie film powtórkowy **Flashcards**, który również możesz oglądać i na głos odpowiadać na pytania. Po niektórych działach będą **Zadania domowe**, dzięki którym możesz przećwiczyć zdobytą wiedzę.
+
+2. Tryb - ćwiczenie na równi z filmem.
+
+    Pod filmem i opisem załączone są materiały (pliki, linki), używane w danej lekcji. Możesz je pobrać, otworzyć i pracować na równi z filmem instruktażowym.
+
+    Kliknij w link, zacznie się pobieranie pliku:
+
+    ![](./assets/getting_started__tip_4__download_attachment.png)
+
+    Następnie ustaw okna tak, aby po jednej stronie widzieć okno przeglądarki z filmem z lekcji, a po drugiej stronie otwarty plik z pobranym materiałem z tej lekcji (np. z Notebookiem). 
+    Najedź kursorem na otwarty plik w przeglądarce > naciśnij prawym przyciskiem myszy > wybierz **Przenieś kartę do innego okna** > **Nowe okno**
+
+    ![](./assets/getting_started__tip_4__open_in_new_window.png)
+
+    Następnie naciśnij ikonę kwadratu w prawych górnych rogach okien przeglądarek i ustaw sobie okno z filmem po jednej stronie, a z materiałem po drugiej. 
+
+    ![](./assets/getting_started__tip_4__split_screen.png)
+
+    W ten sposób możesz jednocześnie oglądać film i samodzielnie uruchamiać procesy, testować - bawić się kodem i funkcjami.
+
+    ![](./assets/getting_started__tip_4__watch_and_learn.png)
+
+    Dodatkowo, rozwiązując kilka lekcji z rzędu, możesz łatwo przenosić i otwierać kolejne pobrane pliki:
+
+    Pobierz plik > naciśnij ikonę **Pobrane pliki** > wybierz najnowszy pobrany plik, złap go i przenieś do drzewa plików w notebooku
+
+    ![](./assets/getting_started__tip_4__easy_download.png)
+## Tip 2. Kolejność lekcji na platformie
+
+Jak przechodzić lekcje chronologicznie?
+
+Pod każdą lekcją widnieje spis zawartości kursu. Możesz tam zobaczyć, w którym miejscu aktualnie się znajdujesz (zaznaczone na szaro), ile jeszcze przed Tobą, a ile za. Kolejność lekcji wypisana jest w dwóch pionowych kolumnach. Przejdź najpierw całą lewą kolumnę (od góry do dołu), a potem całą prawą kolumnę. 
+    
+1. Chcąc przejść chronologicznie do kolejnej lekcji, naciśnij na tę, która jest pod spodem.
+    
+    ![](./assets/getting_started__tip_3__lessons_sequence.png)
+    
+2. Innym sposobem na przechodzenie do następnej lekcji w odpowiedniej kolejności jest naciśnięcie przycisku **Następna** w prawym rogu nad filmem.
+    
+    ![](./assets/getting_started__tip_3__nex_lesson.png)
+
+
+## Tip 3. Gdzie zapisywać materiały?
 
 Z czasem trwania kursu, plików i materiałów będzie coraz więcej. Dlatego zadbaj od początku o zbieranie plików w jednym folderze, z podziałem na moduły.
 
@@ -39,7 +94,7 @@ Instrukcja:
 
     ![](./assets/getting_started__tip_1__inner_directory.png)
 
-## Tip 2. Zapisywanie stron do paska zakładek
+## Tip 4. Zapisywanie stron do paska zakładek
 
 W poszczególnych lekcjach będą pojawiały się linki do stron internetowych. Do niektórych stron będziemy często wracać w trakcie trwania kursu. Dlatego polecamy, abyś od początku zapisywał/zapisywała sobie te strony w pasku zakładek w przeglądarce, lub w folderze zakładek w przeglądarce. Dzięki temu, będziesz miał/miała je pod ręką. 
 
@@ -78,52 +133,6 @@ W poszczególnych lekcjach będą pojawiały się linki do stron internetowych. 
 
     ![](./assets/getting_started__tip_2__bookmarsk_folder.png)
 
-## Tip 3. Kolejność lekcji na platformie
-
-Jak przechodzić lekcje chronologicznie?
-
-Pod każdą lekcją widnieje spis zawartości kursu. Możesz tam zobaczyć, w którym miejscu aktualnie się znajdujesz (zaznaczone na szaro), ile jeszcze przed Tobą, a ile za. Kolejność lekcji wypisana jest w dwóch pionowych kolumnach. Przejdź najpierw całą lewą kolumnę (od góry do dołu), a potem całą prawą kolumnę. 
-    
-1. Chcąc przejść chronologicznie do kolejnej lekcji, naciśnij na tę, która jest pod spodem.
-    
-    ![](./assets/getting_started__tip_3__lessons_sequence.png)
-    
-2. Innym sposobem na przechodzenie do następnej lekcji w odpowiedniej kolejności jest naciśnięcie przycisku **Następna** w prawym rogu nad filmem.
-    
-    ![](./assets/getting_started__tip_3__nex_lesson.png)
-
-## Tip 4. Jak pracować z lekcjami?
-
-1. Tryb - oglądanie, słuchanie, czytanie.
-
-    Możesz po prostu oglądać filmy i czytać treści zamieszczone pod filmami. Po każdym ważnym temacie czeka na Ciebie film powtórkowy **Flashcards**, który również możesz oglądać i na głos odpowiadać na pytania. Po niektórych działach będą **Zadania domowe**, dzięki którym możesz przećwiczyć zdobytą wiedzę.
-
-2. Tryb - ćwiczenie na równi z filmem.
-
-    Pod filmem i opisem załączone są materiały (pliki, linki), używane w danej lekcji. Możesz je pobrać, otworzyć i pracować na równi z filmem instruktażowym.
-
-    Kliknij w link, zacznie się pobieranie pliku:
-
-    ![](./assets/getting_started__tip_4__download_attachment.png)
-
-    Następnie ustaw okna tak, aby po jednej stronie widzieć okno przeglądarki z filmem z lekcji, a po drugiej stronie otwarty plik z pobranym materiałem z tej lekcji (np. z Notebookiem). 
-    Najedź kursorem na otwarty plik w przeglądarce > naciśnij prawym przyciskiem myszy > wybierz **Przenieś kartę do innego okna** > **Nowe okno**
-
-    ![](./assets/getting_started__tip_4__open_in_new_window.png)
-
-    Następnie naciśnij ikonę kwadratu w prawych górnych rogach okien przeglądarek i ustaw sobie okno z filmem po jednej stronie, a z materiałem po drugiej. 
-
-    ![](./assets/getting_started__tip_4__split_screen.png)
-
-    W ten sposób możesz jednocześnie oglądać film i samodzielnie uruchamiać procesy, testować - bawić się kodem i funkcjami.
-
-    ![](./assets/getting_started__tip_4__watch_and_learn.png)
-
-    Dodatkowo, rozwiązując kilka lekcji z rzędu, możesz łatwo przenosić i otwierać kolejne pobrane pliki:
-
-    Pobierz plik > naciśnij ikonę **Pobrane pliki** > wybierz najnowszy pobrany plik, złap go i przenieś do drzewa plików w notebooku
-
-    ![](./assets/getting_started__tip_4__easy_download.png)
 
 ## Tip 5. Jak zrobić screena
 
