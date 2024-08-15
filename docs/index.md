@@ -2,7 +2,7 @@
 
 Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trakcie kursu. Jeśli nie znajdziesz odpowiedzi na swoje pytanie, to zapytaj na Discordzie. Pamiętaj żeby zawsze najpierw sprawdzić tutaj gdyż odpowiedzi, które są tu zamieszczone są bardzo wyczerpujące i zawierają linki do dodatkowych materiałów.
 
-## Jak zacząćpracę z kursem ( Getting started guide )
+## Jak zacząć pracę z kursem ( Getting started guide )
 
 - [Jak pracować z kursem](./pages/getting_started.md)
 
