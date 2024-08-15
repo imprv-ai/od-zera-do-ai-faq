@@ -22,11 +22,15 @@ Mogą one występować w postaci:
 
 1. Tryb - oglądanie, słuchanie, czytanie.
 
-    Możesz po prostu oglądać filmy i czytać treści zamieszczone pod filmami. Po każdym ważnym temacie czeka na Ciebie film powtórkowy **Flashcards**, który również możesz oglądać i na głos odpowiadać na pytania. Po niektórych działach będą **Zadania domowe**, dzięki którym możesz przećwiczyć zdobytą wiedzę.
+    Możesz po prostu oglądać filmy i czytać treści zamieszczone pod filmami. Po każdym ważnym temacie czeka na Ciebie film powtórkowy **Flashcards**, który również możesz oglądać i na głos odpowiadać na pytania. Po każdym dziale będą na Ciebie czekały **Zadania domowe**, dzięki którym możesz przećwiczyć zdobytą wiedzę.
 
 2. Tryb - ćwiczenie na równi z filmem.
 
-    Pod filmem i opisem załączone są materiały (pliki, linki), używane w danej lekcji. Możesz je pobrać, otworzyć i pracować na równi z filmem instruktażowym.
+    W niektórych lekcjach demonstrujemy bezpośrednie zastosowanie pewnych konceptów i narzędzi.
+
+    Przy takich filmach gorąco zachęcamy do aktywnego przejścia przez lekcję razem z nami, krok po kroku.
+
+    Pod filmem i opisem załączone są materiały (pliki, linki), używane w danej lekcji. Pobierz je, otwórz i powtarzaj kroki zaprezentowane przez mentora. 
 
     Kliknij w link, zacznie się pobieranie pliku:
 
