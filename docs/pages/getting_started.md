@@ -138,7 +138,7 @@ W poszczególnych lekcjach będą pojawiały się linki do stron internetowych. 
     ![](./assets/getting_started__tip_2__bookmarsk_folder.png)
 
 
-## Tip 5. Jak zrobić screena
+## Tip 5. Jak zrobić screena?
 
 Screen - elektroniczny zapis, zrzut obrazu aktualnie wyświetlanego na ekranie komputera. To tak jakby zrobić zdjęcie tego co widzimy na naszym komputerze/monitorze. Screen można zapisać jako plik, można go do kogoś przesłać, coś na nim zaznaczyć, narysować. 
 Robienie screenów będzie przydatne w kursie, aby pokazywać zadania domowe albo formułować pytania, zgłaszać problemy.
@@ -179,6 +179,61 @@ Robienie screenów będzie przydatne w kursie, aby pokazywać zadania domowe alb
     Możesz wybrać kolor zaznaczania i rozmiar lini.
     
     ![](./assets/getting_started__tip_5__draw.png)
+
+## Tip 6. Jak i gdzie zgłaszać problem?
+
+Jeśli w trakcie przechodzenia kursu, wystąpi u Ciebie problem i nie znajdziesz rozwiązania w dziale FAQ, napisz do nas na Discordzie.
+
+Link do naszego kanału znajduje się na stronie głównej kursu **Pracuj w AI: Zostań Data Scientist od Zera:**
+    
+[Link do strony](https://edu.gotoit.pl/index.php/pracuj-w-ai-data-science/)
+![](./assets/getting_started__report_a_problem_open_the_discord.png)
+
+Aby zgłosić problem na Discordzie, który jest miejscem wymiany doświadczeń i pomocy między kursantami i mentorami, postępuj zgodnie z poniższymi krokami:
+
+1. Wybierz odpowiedni kanał, zgodny z modułem, w którym masz problem np. modul-1-pytania-i-problemy jeśli Twój problem dotyczy lekcji z modułu pierwszego
+
+    Tak wygląda lista kanałów:
+
+    ![](./assets/getting_started__report_a_problem_discord_channel.png)
+
+2. W wiadomości załącz link do lekcji, w której wystąpił Twój problem 
+3. Opisz jak najwięcej informacji o Twoim problemie
+4. Zamieść jeden lub więcej screenów, żeby pokazać szczegóły Twojego problemu. Jeśli wyskakuje Ci błąd w kodzie zadbaj o to by pokazać początek - nazwę błędu i koniec błędu. Na screenie możesz zaznaczyć strzałkami lub podkreślić dokładnie miejsca, które stwarzają problem. Pokaż też używane pliki i ich nazwy.
+    
+    **Początek błędu:**
+
+    ![](./assets/getting_started__report_a_problem_screen_1_new.png)
+
+    **Koniec błędu:**
+
+    ![](./assets/getting_started__report_a_problem_screen_2_new.png)
+
+    **Widok na okno Discorda:**
+
+    ![](./assets/getting_started__report_a_problem_discord_channels_new.png)
+
+    **Przykład zgłoszenia problemu z modułu 5:**
+
+    ![](./assets/getting_started__report_a_problem_send_a_message_new.png)
+
+    Tak wygląda wiadomość przed wysłaniem. Możesz jeszcze zmienić załączone pliki, usunąć, dodać. **Naciśnij Enter aby wysłać.**
+
+    ![](./assets/getting_started__report_a_problem_message.png)
+
+    **Tak wygląda wysłana wiadomość:**
+
+    ![](./assets/getting_started__report_a_problem_message_2.png)
+
+    **Czekaj na odpowiedź.**
+
+
+
+
+
+
+
+
 
  
 
