@@ -199,7 +199,7 @@ Aby zgłosić problem na Discordzie, który jest miejscem wymiany doświadczeń 
 
 2. W wiadomości załącz link do lekcji, w której wystąpił Twój problem 
 3. Opisz jak najwięcej informacji o Twoim problemie
-4. Zamieść jeden lub więcej screenów, żeby pokazać szczegóły Twojego problemu. Jeśli wyskakuje Ci błąd w kodzie zadbaj o to by pokazać początek - nazwę błędu i koniec błędu. Na screenie możesz zaznaczyć strzałkami lub podkreślić dokładnie miejsca, które stwarzają problem. Pokaż też używane pliki i ich nazwy.
+4. Zamieść jeden lub więcej screenów, żeby pokazać szczegóły Twojego problemu. Jeśli wyskakuje Ci błąd w kodzie, zadbaj o to by pokazać początek - nazwę błędu i koniec błędu. Na screenie możesz zaznaczyć strzałkami lub podkreślić dokładnie miejsca, które stwarzają problem. Pokaż też używane pliki i ich nazwy.
     
     **Początek błędu:**
 
