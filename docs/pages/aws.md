@@ -20,7 +20,7 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
 
     ![](./assets/aws__create_account__create_free_account.png)
 
-1. Wpisz **adres email** na który chcesz założyć konto, oraz **nazwę użytkownika (login)** którym chcesz się posługiwać
+1. Wpisz **adres email**, na który chcesz założyć konto, oraz **nazwę użytkownika (login)**, którym chcesz się posługiwać
 
     ![](./assets/aws__create_account__email_and_login.png)
 
@@ -94,7 +94,7 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
 
     ![](./assets/aws__create_account__congrats.png)
 
-1. Panel zarządzania usługami AWS wygląda następująco. Jesli go widzisz to znaczy że wszystko się udało. **GRATULACJE**
+1. Panel zarządzania usługami AWS wygląda następująco. Jeśli go widzisz to znaczy, że wszystko się udało. **GRATULACJE**
 
     ![](./assets/aws__create_account__finish.png)
 
@@ -102,9 +102,9 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
 ## Jak się zalogować do konta AWS?
 Częste problemy:
 
-*Mam już konto AWS ale nie wiem gdzie kliknąć i na jaką stronę wejść żeby się zalogować.*
+*Mam już konto AWS, ale nie wiem gdzie kliknąć i na jaką stronę wejść żeby się zalogować.*
 
-*Wiem na jaką stronę się zalogować ale ciągle mówi mi że dane są niewłaściwe. Widzę 3 pola do wpisania a mam tylko email i hasło*
+*Wiem na jaką stronę się zalogować, ale ciągle mówi mi, że dane są niewłaściwe. Widzę 3 pola do wpisania a mam tylko email i hasło*
 
 
 1. Wejdź na stronę konsoli AWS ( link poniżej )
@@ -119,7 +119,7 @@ Częste problemy:
 
     ![](./assets/aws__sign_in__use_root_email.png)
 
-1. Na tym ekranie logowania wpisz **adres email** dla którego zostało stworzone konto i kliknij **Next**
+1. Na tym ekranie logowania wpisz **adres email**, dla którego zostało stworzone konto i kliknij **Next**
 
     ![](./assets/aws__sign_in__credentials_email.png)
 
@@ -128,6 +128,6 @@ Częste problemy:
     ![](./assets/aws__sign_in__credentials_password.png)
 
 
-1. Panel zarządzania usługami AWS wygląda następująco. Jesli go widzisz to znaczy że wszystko się udało. **GRATULACJE**
+1. Panel zarządzania usługami AWS wygląda następująco. Jeśli go widzisz to znaczy, że wszystko się udało. **GRATULACJE**
 
     ![](./assets/aws__create_account__finish.png)
