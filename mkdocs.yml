@@ -14,6 +14,10 @@ repo_url: https://github.com/imprv-ai/od-zera-do-ai-faq
 theme:
   name: material
 
+plugins: 
+  - tags
+  - search
+
 markdown_extensions:
   - toc:
       permalink: true
