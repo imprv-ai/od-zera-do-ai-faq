@@ -30,7 +30,7 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
     
         ![](./assets/aws__create_account__verification_code.png)
 
-    1. Wejdź do klienta swojej poczty email i znajdź email od **no-reply@signup.aws**. Dostarczenie maile może potrwać kilka minut. Jeśli nie możesz go znaleźć, sprawdź także **SPAM**
+    1. Wejdź do klienta swojej poczty email i znajdź email od **no-reply@signup.aws**. Dostarczenie wiadomości email z kodem może potrwać kilka minut. Jeśli nie możesz go znaleźć, sprawdź także **SPAM**
 
         ![](./assets/aws__create_account__find_email.png)
 
