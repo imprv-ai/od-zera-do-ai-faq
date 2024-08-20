@@ -78,7 +78,7 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
 
 1. W tym kroku należy potwierdzić swoją tożsamość.
 
-    Wybierz że chcesz otrzymać kod przez SMS. Następnie podaj kierunkowy odpowiadający Twojemu numerowi telefonu, podaj nr telefonu, przepisz kod z obrazka i kliknij przycisk **Send SMS (step 4 of 5)**
+    Wybierz, że chcesz otrzymać kod przez SMS. Następnie podaj kierunkowy odpowiadający Twojemu numerowi telefonu, podaj nr telefonu, przepisz kod z obrazka i kliknij przycisk **Send SMS (step 4 of 5)**
 
     ![](./assets/aws__create_account__identity.png)
 
