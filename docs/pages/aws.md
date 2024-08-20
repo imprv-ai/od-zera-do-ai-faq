@@ -2,6 +2,7 @@
 tags:
     - Moduł 9
     - AWS
+    - Amazon
     - Chmura
 ---
 # AWS - Amazon Web Services
@@ -15,35 +16,35 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
 
     [Link do strony logowania](https://aws.amazon.com/free)
 
-1. Kliknij w guzik `Create a Free Account`, który pozwala na utworzenie darmowego konta
+1. Kliknij w przycisk **Create a Free Account**, który pozwala na utworzenie darmowego konta
 
     ![](./assets/aws__create_account__create_free_account.png)
 
-1. Wpisz **adres email** na który chcesz założyć konto, oraz **nazwe użytkownika (login)** którym chcesz się posługiwać
+1. Wpisz **adres email** na który chcesz założyć konto, oraz **nazwę użytkownika (login)** którym chcesz się posługiwać
 
     ![](./assets/aws__create_account__email_and_login.png)
 
 1. Następnie należy zweryfikować swój adres email.
 
-    Widok weryfikacji kodu
+    1. Widok weryfikacji kodu
     
-    ![](./assets/aws__create_account__verification_code.png)
+        ![](./assets/aws__create_account__verification_code.png)
 
-    Wejdź do klienta swojej poczty email i znajdź email od **no-reply@signup.aws**. Dostarczenie maile może potrwać kilka minut. Jeśli nie możesz go znaleźć, sprawdź także **SPAM**
+    1. Wejdź do klienta swojej poczty email i znajdź email od **no-reply@signup.aws**. Dostarczenie maile może potrwać kilka minut. Jeśli nie możesz go znaleźć, sprawdź także **SPAM**
 
-    ![](./assets/aws__create_account__find_email.png)
+        ![](./assets/aws__create_account__find_email.png)
 
-    W treści wiadomości email znajduje się kod weryfikacyjny. Skopiuj go.
+    1. W treści wiadomości email znajduje się kod weryfikacyjny. Skopiuj go.
 
-    ![](./assets/aws__create_account__verification_code.png)
+        ![](./assets/aws__create_account__copy_code.png)
 
-    Wklej kod weryfikacyjny w zaznaczone miejsce
+    1. Wklej kod weryfikacyjny w zaznaczone miejsce
 
-    ![](./assets/aws__create_account__paste_verification_code.png)
+        ![](./assets/aws__create_account__paste_verification_code.png)
 
-1. Powinieneś zobaczyć teraz stronę potwierdzającą, że adres email został zweryfikowany.
+1. Zobaczysz teraz stronę potwierdzającą, że adres email został zweryfikowany.
 
-    Na tej samej stronie, należy zdefiniować i potwierdzić hasło do konta AWS. Wymyśl i wpisz hasło w miejsce oznaczone cyfrą 1, następnie wpisz to samo hasło jeszcze raz w miejsce oznaczone cyfrą 2 a następnie kliknij przycisk **Continue (step 1 of 5)**
+    Na tej samej stronie, należy zdefiniować i potwierdzić hasło do konta AWS.
     
     !!! info "Ostrożnie z hasłami!"
 
@@ -57,6 +58,9 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
         - znaki specjalne, takie jak !@#$%^&*()
 
         ![](./assets/aws__create_account__password_requirements.png)
+    
+    Wymyśl i wpisz hasło w miejsce oznaczone cyfrą 1, następnie wpisz to samo hasło jeszcze raz w miejsce oznaczone cyfrą 2. Teraz kliknij przycisk **Continue (step 1 of 5)**
+    
 
     ![](./assets/aws__create_account__password_creation.png)
 
@@ -74,7 +78,7 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
 
 1. W tym kroku należy potwierdzić swoją tożsamość.
 
-    Wybierz czy chcesz otrzymać kod przez SMS czy przez rozmowę, następnie podaj kierunkowy odpowiadający Twojemu numerowi telefonu, podan nr telefonu, przepisz kod z obrazka i kliknij przycisk **Send SMS (step 4 of 5)
+    Wybierz że chcesz otrzymać kod przez SMS. Następnie podaj kierunkowy odpowiadający Twojemu numerowi telefonu, podaj nr telefonu, przepisz kod z obrazka i kliknij przycisk **Send SMS (step 4 of 5)**
 
     ![](./assets/aws__create_account__identity.png)
 
@@ -82,7 +86,7 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
 
     ![](./assets/aws__create_account__verification_sms.png)
 
-1. Następnie wybierz opcję darmową ( całkiem po lewej stronie ) i kliknij **Complete sign up**
+1. Następnie wybierz opcję darmową (całkiem po lewej stronie) i kliknij **Complete sign up**
 
     ![](./assets/aws__create_account__complete_signup.png)
 
@@ -96,7 +100,12 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
 
 
 ## Jak się zalogować do konta AWS?
-Mam już konto AWS ale nie wiem gdzie kliknąć i na jaką stronę wejść żeby się zalogować
+Częste problemy:
+
+*Mam już konto AWS ale nie wiem gdzie kliknąć i na jaką stronę wejść żeby się zalogować.*
+
+*Wiem na jaką stronę się zalogować ale ciągle mówi mi że dane są niewłaściwe. Widzę 3 pola do wpisania a mam tylko email i hasło*
+
 
 1. Wejdź na stronę konsoli AWS ( link poniżej )
 
