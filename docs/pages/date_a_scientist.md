@@ -23,14 +23,15 @@ Sprawdź czy nie masz literówki w nazwie pakietu. Może być tak, że nazwa pak
 
 ## **Po instalacji pakietu `date-a-scientist` z Anaconda Cloud nie mogę go zaimportować albo notebook go nie widzi**
 
-Jeżeli widzisz błąd:
+Jeśli wszystko wydaje się być w porządku, lecz pojawiają się poniższe błędy:
 
 ![](./assets/date_a_scientist__import_problem.png)
 
-Aby zainstalowany pakiet dało się zaimportować, należy uruchomić ponownie kernel.
-W tym celu kliknij ikonkę `Restart kernel` (ikonka przypomina guzik replay) na górnej belce nad komórkami notebooka.
+Spróbuj zrestartować kernel i uruchomić ponownie wszystkie komórki w notebooku Jupyter. Aby to zrobić, kliknij przycisk oznaczony na poniższym obrazku (`Restart the kernel and run all cells`).
 
 ![](./assets/jupyter_lab__notebook_kernel_restart.png)
+
+Znajdziesz go w górnej części interfejsu, obok przycisków nawigacyjnych. Po kliknięciu tego przycisku kernel zostanie zrestartowany, a wszystkie komórki w notebooku zostaną uruchomione ponownie.
 
 ## **Widzę błąd `UnicodeEncodeError` jak wpisuję polskie znaki w date-a-scientist**
 
