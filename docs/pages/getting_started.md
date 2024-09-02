@@ -227,7 +227,19 @@ Aby zgłosić problem na Discordzie, który jest miejscem wymiany doświadczeń 
 
     **Czekaj na odpowiedź.**
 
+## Tip 7. Jak spakować pliki do ZIP-a?
 
+W przypadku, gdy będziesz miał/miała wiele plików w folderze z zadaniem domowym, aby je wysłać, można skompresować ten cały folder do formatu ZIP. Kompresja pozwala, zmniejszć rozmiar plików, co ułatwia ich wysyłanie. Sam proces jest szybki i prosty.
+
+Wystarczy, że: **Klikniesz prawym przyciskiem myszy na folder,** który chcesz kompresować **>** najedź na: **Kompresuj do >** wybierz **Plik ZIP**
+
+![](./assets/getting_started__creating_a_ZIP_file.png)
+
+Pod folderem, który wybrałeś/wybrałaś, pojawi się skompresowany folder w formacie ZIP. Jeśli jest taka potrzeba możesz jeszcze zmienić jego nazwę.
+
+![](./assets/getting_started__name_a_ZIP_file.png)
+
+**I gotowe!** Tak przygotowany folder np. z zadaniem domowym, możesz wysyłać na Discordzie.
 
 
 
