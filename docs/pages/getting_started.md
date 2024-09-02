@@ -229,7 +229,7 @@ Aby zgłosić problem na Discordzie, który jest miejscem wymiany doświadczeń 
 
 ## Tip 7. Jak spakować pliki do ZIP-a?
 
-W przypadku, gdy będziesz miał/miała wiele plików w folderze z zadaniem domowym, aby je wysłać, można skompresować ten cały folder do formatu ZIP. Kompresja pozwala, zmniejszć rozmiar plików, co ułatwia ich wysyłanie. Sam proces jest szybki i prosty.
+W przypadku, gdy będziesz miał/miała wiele plików w folderze z zadaniem domowym, aby je wysłać, można skompresować ten cały folder do formatu ZIP. Spakowanie plików pozwala na wysłanie kilku plików jako jednego pliku, a kompresja pozwala, zmniejszyć rozmiar przesyłanych danych, co ułatwia ich wysyłanie. Sam proces jest szybki i prosty.
 
 Wystarczy, że: **Klikniesz prawym przyciskiem myszy na folder,** który chcesz kompresować **>** najedź na: **Kompresuj do >** wybierz **Plik ZIP**
 
