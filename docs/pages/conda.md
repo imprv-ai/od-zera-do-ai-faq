@@ -1,4 +1,3 @@
-
 # **Jak zainstalować i skonfigurować conda**
 
 `conda` to narzędzie do zarządzania środowiskami w Pythonie. Dzięki niemu możemy łatwo instalować i zarządzać pakietami w Pythonie.
@@ -17,7 +16,11 @@
 
 ![](./assets/jupyter_lab_no_notebooks_main.png)
 
-Na początku folder modul_3 jest pusty, ale z każdą kolejną lekcją stopniowo go zapełnisz.
+Na początku folder `modul_3` jest pusty, ale z każdą kolejną lekcją stopniowo go zapełnisz. Pod filmami znajdziesz pliki do pobrania (zazwyczaj będą to notebooki), które będziesz musiał dodać do folderu `modul_3`.
+
+![](./assets/getting_started__tip_4__download_attachment.png)
+
+Po pobraniu plików, przenieś je do folderu `modul_3`.
 Docelowo na końcu modułu Twój folder będzie wyglądał tak:
 
 ![](./assets/jupyter_lab_no_notebooks_already_with_notebooks.png)
