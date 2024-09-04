@@ -241,6 +241,37 @@ Pod folderem, który wybrałeś/wybrałaś, pojawi się skompresowany folder w f
 
 **I gotowe!** Tak przygotowany folder np. z zadaniem domowym, możesz wysyłać na Discordzie.
 
+## Tip 8. Jak wysłać prywatną wiadomość na Discordzie?
+
+Na Discordzie istnieje możliwość wysłania wiadomości prywatnej, bezpośrednio do jednej, wybranej osoby. W oknie Discorda po prawej stronie, znajduje się lista członków. W przypadku naszej grupy**: "GOTOIT Data Science"** u góry będziemy widzieli listę mentorów i osób z zespołu, a pod spodem grupę kursantów.
+
+![](./assets/getting_started__direct_message_members.png)
+
+Aby wysłać wiadomość prywatną, bezpośrednio do jednej osoby, należy **najechać kursorem myszki na wybraną osobę,** do której chcemy napisać **> wcisnąć prawy przycisk myszy >** wybrać **Wyślij wiadomość** 
+
+![](./assets/getting_started__direct_message_from_the_list.png)
+
+Po czym pojawi się okno do rozpoczęcia bezpośredniej konwersacji z wybraną osobą. Wystarczy wtedy napisać wiadomość i wysłać wciskając **Enter**
+
+![](./assets/getting_started__direct_message.png)
+
+Osobę do bezpośredniej konwersacji można też wybrać z okna wyświetlanego kanału. Wystarczy znowu **najechać kursorem na osobę > wcisnąć prawy przycisk myszy >** wybrać **Wyślij wiadomość**
+
+![](./assets/getting_started__direct_message_from_the_channel.png)
+
+Po czym również wyświetli się okno prywatnej konwersacji. Można napisać wiadomość i wysłać wciskając **Enter**
+
+![](./assets/getting_started__private_message.png)
+
+Z okna bezpośredniej konwersacji można wrócić do widoku głównego grupy, klikając w ikonę grupy**: "GOTOIT Data Science"** w lewym górnym rogu.
+
+![](./assets/getting_started__direct_message_go_back.png)
+
+
+
+
+
+
 
 
 
