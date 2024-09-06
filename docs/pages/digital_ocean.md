@@ -37,3 +37,38 @@ DigitalOcean to platforma chmurowa, która umożliwia użytkownikom tworzenie i 
 1. Ekran konsoli Digital Ocean
 
     ![](./assets/digital_ocean__console.png)
+
+## Jak się zalogować do Digital Ocean
+
+1. Wejdź na stronę logowania [https://cloud.digitalocean.com/login](https://cloud.digitalocean.com/login)
+
+1. Tutaj istnieją 2 możliwości:
+    1. Jeśli przeglądarka pamięta jeszcze ostatnią sesję, to zobaczysz ekran na, na którym możesz potwierdzić, że chcesz wrócić do tej sesji. 
+    W tym scenariuszu kliknij w guzik **Sign In with GitHub**
+
+    ![](./assets/digital_ocean__login__confirm.png)
+
+    1. Jeśli Twoja poprzednia sesja nie jest zapisana, wówczas wybierz sposób logowania, ten sam który został wybrany przy rejestracji.
+    Moim wyborem podczas prowadzenia lekcji był `GitHub`. Jeśli był to
+    również Twój wybór, to kliknij **Sign In with GitHub**
+
+    ![](./assets/digital_ocean__login__new.png)
+
+## Jak usunąć konto Digital Ocean
+
+1. Zaloguj się do konsoli Digital Ocean, tak jak w instrukcji wyżej.
+1. Kliknij w swój awatar, znajdujący się w prawym górnym rogu konsoli
+
+    ![](./assets/digital_ocean__delete_account__user_settings.png)
+
+1. Następnie z menu wybierz **My Account**
+
+    ![](./assets/digital_ocean__delete_account__user_menu.png)
+
+1. Nawiguj na dół strony i kliknij guzik **Deactivate** znajdujący się w prawym dolnym rogu
+
+    ![](./assets/digital_ocean__delete_account__deactivate.png)
+
+1. Następnie, na kolejnym ekranie zaznacz **Purge my account data** i potwierdź usunięcie klikając przycisk **Delete Account and Purge Data**
+
+    ![](./assets/digital_ocean__delete_account__purge.png)
