@@ -33,3 +33,7 @@ DigitalOcean to platforma chmurowa, która umożliwia użytkownikom tworzenie i 
 1. Jeśli po weryfikacji zobaczymy ekran powitalny, to oznacza że wszystko poszło w porządku. W celu przejścia do konsoli Digital Ocean, należy wcisnąć przycisk **Explore our Control Panel**
 
     ![](./assets/digital_ocean__create_account__welcome.png)
+
+1. Ekran konsoli Digital Ocean
+
+    ![](./assets/digital_ocean__console.png)
