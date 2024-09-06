@@ -18,3 +18,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Problemy ze Streamlit Community Cloud](./pages/streamlit_community_cloud.md)
 - [Problemy ze Streamlit](./pages/streamlit.md)
 - [AWS - Amazon Web Services](./pages/aws.md)
+- [Digital Ocean](./pages/digital_ocean.md)
