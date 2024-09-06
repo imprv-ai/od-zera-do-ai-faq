@@ -30,7 +30,7 @@ DigitalOcean to platforma chmurowa, która umożliwia użytkownikom tworzenie i 
 
     ![](./assets/digital_ocean__create_account__card_details.png)
 
-1. Jeśli po weryfikacji zobaczymy ekran powitalny, to oznacza że wszystko poszło w porządku. W celu przejścia do konsoli Digital Ocean, należy wcisnąć przycisk **Explore our Control Panel**
+1. Jeśli po weryfikacji zobaczymy ekran powitalny, to oznacza, że wszystko poszło w porządku. W celu przejścia do konsoli Digital Ocean, należy wcisnąć przycisk **Explore our Control Panel**
 
     ![](./assets/digital_ocean__create_account__welcome.png)
 
@@ -43,12 +43,12 @@ DigitalOcean to platforma chmurowa, która umożliwia użytkownikom tworzenie i 
 1. Wejdź na stronę logowania [https://cloud.digitalocean.com/login](https://cloud.digitalocean.com/login)
 
 1. Tutaj istnieją 2 możliwości:
-    1. Jeśli przeglądarka pamięta jeszcze ostatnią sesję, to zobaczysz ekran na, na którym możesz potwierdzić, że chcesz wrócić do tej sesji. 
+    1. Jeśli przeglądarka pamięta jeszcze ostatnią sesję, to zobaczysz ekran, na którym możesz potwierdzić, że chcesz wrócić do tej sesji. 
     W tym scenariuszu kliknij w guzik **Sign In with GitHub**
 
     ![](./assets/digital_ocean__login__confirm.png)
 
-    1. Jeśli Twoja poprzednia sesja nie jest zapisana, wówczas wybierz sposób logowania, ten sam który został wybrany przy rejestracji.
+    1. Jeśli Twoja poprzednia sesja nie jest zapisana, wówczas wybierz ten sam sposób logowania, ten sam który został wybrany przy rejestracji.
     Moim wyborem podczas prowadzenia lekcji był `GitHub`. Jeśli był to
     również Twój wybór, to kliknij **Sign In with GitHub**
 
