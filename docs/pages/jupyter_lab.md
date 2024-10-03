@@ -83,7 +83,7 @@ Aby zainstalować `MikTeX`:
 ![](assets/notebook_to_pdf__step_15.png)
 ![](assets/notebook_to_pdf__step_16.png)
 
-- Na koniec zostaniemy poproszeni o doinstalowanie brakujących pakietów, klikamy `Install`:
+- Uruchamiamy ponownie `Anaconda Prompt`, następnie `jupyter lab` i próbujemy ponownie wyeksportować notebooka do PDF. W tym momencie zostaniemy poproszeni o doinstalowanie dodatkowych pakietów, klikamy `Install`:
 
 ![](assets/notebook_to_pdf__step_17.png)
 ![](assets/notebook_to_pdf__step_18.png)
@@ -111,5 +111,3 @@ Aby zainstalować `MikTeX`:
 ![](assets/notebook_to_pdf__step_40.png)
 ![](assets/notebook_to_pdf__step_41.png)
 ![](assets/notebook_to_pdf__step_42.png)
-
-Uruchamiamy ponownie `Anaconda Prompt`, następnie `jupyter lab` i próbujemy ponownie wyeksportować notebooka do PDF.
