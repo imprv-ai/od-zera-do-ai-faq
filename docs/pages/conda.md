@@ -6,6 +6,7 @@
 
 - [Instrukcja instalacji conda pod Macos](assets/conda__installation_for_macos.pdf)
 - [Instrukcja instalacji conda pod Windows](assets/conda__installation_for_windows.pdf)
+- [Instrukcja instalacji conda pod Ubuntu](assets/conda__installation_for_ubuntu.pdf)
 
 ## **Jak skonfigurować conda**
 
