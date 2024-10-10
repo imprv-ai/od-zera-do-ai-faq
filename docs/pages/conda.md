@@ -12,6 +12,12 @@
 
 - [Instrukcja konfiguracji conda](assets/conda__configuration.pdf)
 
+### **Jak ułatwić sobie pracę z Anaconda Prompt na Windows**
+
+<div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Y_iqaAqZNkI?si=ZrlXfxIDaxktL85-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 
 ## **Zainstalowałem i skonfigurowałem condę, jednak folder `modul_3` jest pusty**
 
