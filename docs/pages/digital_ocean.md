@@ -10,9 +10,14 @@ DigitalOcean to platforma chmurowa, która umożliwia użytkownikom tworzenie i 
 
 ## Jak założyć konto w Digital Ocean
 
-1. Wejdź na stronę [digitalocean.com](https://www.digitalocean.com/)
+1. Wejdź na stronę [digitalocean.com](https://m.do.co/c/1d69c2e45097) przez link [https://m.do.co/c/1d69c2e45097](https://m.do.co/c/1d69c2e45097)
 
-    ![](./assets/digital_ocean__create_account__main.png)
+
+    !!! info "Ważne"
+
+        To ważne, aby użyć powyższego linku, żeby dostać darmowe kredyty 
+
+    ![](./assets/digital_ocean__create_account__referral.png)
 
 1. Wybierz `GitHub` jako formę autoryzacji do Digital Ocean. Aby to zrobić kliknij **Sign Up with GitHub**
 
