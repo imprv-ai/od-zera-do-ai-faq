@@ -1,5 +1,20 @@
+---
+tags:
+    - Moduł 1
+    - date-a-scientist
+    - instalacja
+    - biblioteka
+    - anaconda
+    - UnicodeEncodeError
+    - FileNotFoundError
+    - Microsoft Visual C++
+    - error
+    - ModuleNotFoundError
+    - NameError
+    - could not build wheels
+---
 
-# **Problemy z biblioteką `date-a-scientist`**
+# **Biblioteka `date-a-scientist` - instalacja i problemy**
 
 `date-a-scientist` to narzędzie, które pozwala zadawać pytania dotyczące danych w formacie Pandas DataFrame bezpośrednio w Jupyter Notebooku, wykorzystując do tego język naturalny. Dzięki niemu możesz analizować i przetwarzać dane w sposób bardziej intuicyjny, formułując zapytania w prostym, zrozumiałym dla Ciebie języku, zamiast pisać skomplikowany kod.
 
@@ -74,3 +89,19 @@ Jeśli zobaczysz całą serię ostrzeżeń i błędów podczas instalacji, nie m
 ![](./assets/date_a_scientist_installing_warnings_and_errors_successfully_installed.png)
 
 Zaznaczony fragment świadczy o prawidłowym zainstalowaniu biblioteki.
+
+## **Widzę błąd `FileNotFoundError` podczas pracy z `date-a-scientist`**
+
+Jeżeli widzisz błąd jak na obrazku poniżej:
+
+![](assets/notebook__file_not_found.png)
+
+Zwróć uwagę na początek komunikatu o błędzie .
+Jeśli jest tam informacja o braku pliku (np. `FileNotFoundError` jak na obrazku) to najprawdopodobniej masz błąd w ścieżce lub plik nie został pobrany we wskazane miejsce.
+
+* **Sprawdź czy ścieżki są poprawne** np. czy nie ma błędów w nazwach folderów - dużych liter, spacji itp. - domyślnie w kursie używamy folderu *datasets*
+* **Sprawdź czy plik istnieje we wskazanej lokalizacji** np. czy nie został usunięty, czy nie zmieniła się jego nazwa - często przy ponownym pobraniu plików z kursu zmieniają się ich nazwy na **nazwa_pliku(1).csv** itp.
+* **Sprawdź czy plik nie jest uszkodzony** - jeśli plik został pobrany niekompletnie, to może być uszkodzony i nie da się go otworzyć
+* **Sprawdź czy plik ma odpowiednie rozszerzenie** - plik CSV powinien mieć rozszerzenie `.csv`, plik Excel `.xlsx`, notebook `.ipynb`, a plik python `.py`
+
+Pliki z danymi znajdziesz w sekcji `Pliki do pobrania` pod filmami na platformie kursu.
