@@ -1,3 +1,29 @@
+---
+tags:
+    - discord
+    - screen
+    - zip
+    - zakładki
+    - problem
+    - zadanie domowe
+    - praca domowa
+    - prywatna wiadomość
+    - narzędzie wycinanie
+    - pasek zakładek
+    - zgłoszenie problemu
+    - kanał discord
+    - moduł
+    - kolejność lekcji
+    - zapisywanie materiałów
+    - praca z lekcjami
+    - kurs
+    - poradnik
+    - pomoc
+    - FAQ
+    - pytania
+    - odpowiedzi
+---
+
 # Jak zacząć pracę z kursem?
 
 Witajcie w przewodniku, który pomoże Wam rozpocząć przygodę z kursem. Znajdziecie tu praktyczne wskazówki i instrukcje.
@@ -227,7 +253,27 @@ Aby zgłosić problem na Discordzie, który jest miejscem wymiany doświadczeń 
 
     **Czekaj na odpowiedź.**
 
-## Tip 7. Jak spakować pliki do ZIP-a?
+## Tip 7. Gdzie zamieścić zadanie domowe na Discordzie?
+
+Po zakończeniu modułu, w którym jest zadanie domowe, możesz je rozwiązać i wysłać na Discordzie do sprawdzenia.
+
+1. Wybierz odpowiedni kanał, zgodny z modułem, w którym jest zadanie domowe np. **modul-1-zad1** jeśli Twoje zadanie dotyczy modułu pierwszego
+
+    ![](./assets/getting_started__tip_7__homework_modulo_1.png)
+
+1. Napisz wiadomość, w której opiszesz, że wysyłasz zadanie domowe. Załącz pliki z rozwiązaniem zadania. Możesz też napisać, co jest Twoim zdaniem najtrudniejsze w zadaniu, co sprawiło Ci najwięcej problemów, co udało Ci się zrobić, a co nie. 
+
+    * Przykładowa wiadomość prawidłowo wysłanego zadania domowego z **modułu 1**:
+
+    ![](./assets/getting_started__tip_7__homework_modulo_1_example.png)
+
+    * Przykładowa wiadomość prawidłowo wysłanego zadania domowego z **modułu 3**:
+
+    ![](./assets/getting_started__tip_7__homework_modulo_3_example.png)
+
+1. **Gotowe!** Czekamy na odpowiedź!
+
+## Tip 8. Jak spakować pliki do ZIP-a?
 
 W przypadku, gdy będziesz miał/miała wiele plików w folderze z zadaniem domowym, aby je wysłać, można skompresować ten cały folder do formatu ZIP. Spakowanie plików pozwala na wysłanie kilku plików jako jednego pliku, a kompresja pozwala, zmniejszyć rozmiar przesyłanych danych, co ułatwia ich wysyłanie. Sam proces jest szybki i prosty.
 
@@ -241,7 +287,7 @@ Pod folderem, który wybrałeś/wybrałaś, pojawi się skompresowany folder w f
 
 **I gotowe!** Tak przygotowany folder np. z zadaniem domowym, możesz wysyłać na Discordzie.
 
-## Tip 8. Jak wysłać prywatną wiadomość na Discordzie?
+## Tip 9. Jak wysłać prywatną wiadomość na Discordzie?
 
 Na Discordzie istnieje możliwość wysłania wiadomości prywatnej, bezpośrednio do jednej, wybranej osoby. W oknie Discorda po prawej stronie, znajduje się lista członków. W przypadku naszej grupy**: "GOTOIT Data Science"** u góry będziemy widzieli listę mentorów i osób z zespołu, a pod spodem grupę kursantów.
 
