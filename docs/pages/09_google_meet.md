@@ -1,7 +1,21 @@
+---
+tags: 
+    - Google Meet
+    - wideokonferencja
+    - konfiguracja
+    - dźwięk
+    - mikrofon
+    - kamera
+    - ekran
+    - screen share
+    - udostępnianie ekranu
+---
 
-# Google Meet
+# **Google Meet - konfiguracja i problemy**
 
-## Inni uczestnicy mnie nie słyszą, co robić?
+**Google Meet** to narzędzie do wideokonferencji, które pozwala na prowadzenie spotkań online. Nasze spotkania odbywają się właśnie na tej platformie. Poniżej znajdziesz rozwiązania na najczęściej pojawiające się problemy związane z tą platformą. 
+
+## **Inni uczestnicy mnie nie słyszą, co robić?**
 
 Użyj przycisku mikrofonu w Google Meet:
 
@@ -12,7 +26,7 @@ Oraz kliknij w lewym górnym rogu na ikonkę opcji:
 
 ![](./assets/google_meet__microphone_enable.png)
 
-## Inni uczestnicy mnie nie widzą, co robić?
+## **Inni uczestnicy mnie nie widzą, co robić?**
 
 Użyj przycisku kamery w Google Meet:
 
@@ -22,7 +36,7 @@ Jeżeli powyższy przycisk jest wyszarzony sprawdź czy masz kamerę podłączon
 
 ![](./assets/google_meet__camera_enable.png)
 
-## Jak współdzielić ekran w Google Meet?
+## **Jak współdzielić ekran w Google Meet?**
 
 Aby współdzielić ekran w Google Meet kliknij przycisk "Prezentuj" u dołu ekranu:
 

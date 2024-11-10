@@ -4,12 +4,13 @@ tags:
     - AWS
     - Amazon
     - Chmura
+    - Cloud
 ---
-# AWS - Amazon Web Services
+# **AWS - Amazon Web Services - rejestracja i konfiguracja**
 
-AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres usług, które umożliwiają tworzenie, przechowywanie i zarządzanie aplikacjami oraz danymi w chmurze. Usługi AWS obejmują m.in. serwery wirtualne, bazy danych, przechowywanie plików, narzędzia analityczne i sztuczną inteligencję. Dzięki AWS firmy mogą szybko skalować swoje zasoby IT, płacąc tylko za te, które faktycznie wykorzystują. Platforma ta jest używana przez wiele firm na całym świecie, zarówno małych startupów, jak i dużych korporacji. AWS umożliwia również globalną dystrybucję aplikacji, zapewniając wysoką dostępność i niezawodność.
+**AWS**, czyli **Amazon Web Services**, to platforma chmurowa oferująca szeroki zakres usług, które umożliwiają tworzenie, przechowywanie i zarządzanie aplikacjami oraz danymi w chmurze. Usługi AWS obejmują m.in. serwery wirtualne, bazy danych, przechowywanie plików, narzędzia analityczne i sztuczną inteligencję. Dzięki AWS firmy mogą szybko skalować swoje zasoby IT, płacąc tylko za te, które faktycznie wykorzystują. Platforma ta jest używana przez wiele firm na całym świecie, zarówno małych startupów, jak i dużych korporacji. AWS umożliwia również globalną dystrybucję aplikacji, zapewniając wysoką dostępność i niezawodność.
 
-## Jak założyć konto w AWS?
+## **Jak założyć konto w AWS?**
 
 
 1. Kliknij w link odsyłający do strony logowania
@@ -99,7 +100,7 @@ AWS, czyli Amazon Web Services, to platforma chmurowa oferująca szeroki zakres 
     ![](./assets/aws__create_account__finish.png)
 
 
-## Jak się zalogować do konta AWS?
+## **Jak się zalogować do konta AWS?**
 Częste problemy:
 
 *Mam już konto AWS, ale nie wiem gdzie kliknąć i na jaką stronę wejść żeby się zalogować.*

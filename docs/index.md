@@ -1,21 +1,19 @@
-# FAQ dla kursu `Od zera do AI`
+# **FAQ dla kursu `Od zera do AI`**
 
 Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trakcie kursu. Jeśli nie znajdziesz odpowiedzi na swoje pytanie, to zapytaj na Discordzie. Pamiętaj żeby zawsze najpierw sprawdzić tutaj gdyż odpowiedzi, które są tu zamieszczone są bardzo wyczerpujące i zawierają linki do dodatkowych materiałów.
 
-## Jak zacząć pracę z kursem ( Getting started guide )
+## **Jak zacząć pracę z kursem ( Getting started guide )**
 
-- [Jak pracować z kursem](./pages/getting_started.md)
+- [Jak pracować z kursem](./pages/01_getting_started.md)
 
-## Pytania / Odpowiedzi
+## **Pytania i odpowiedzi na najczęściej pojawiające się problemy**
 
-- [Problemy z biblioteką `date-a-scientist`](./pages/date_a_scientist.md)
-- [Problemy z Jupyter Lab / Notebooki](./pages/jupyter_lab.md)
-- [Jak zainstalować i skonfigurować conda](./pages/conda.md)
-- [Błędy w Conda - Przyczyny i rozwiązania](./pages/conda_errors.md)
-- [Visual Studio Code](./pages/vscode.md)
-- [Problemy z Google Meet](./pages/google_meet.md)
-- [Problemy z OpenAI](./pages/open_ai.md)
-- [Problemy ze Streamlit Community Cloud](./pages/streamlit_community_cloud.md)
-- [Problemy ze Streamlit](./pages/streamlit.md)
-- [AWS - Amazon Web Services](./pages/aws.md)
-- [Digital Ocean](./pages/digital_ocean.md)
+- [OpenAI - klucz API, logowanie](./pages/02_open_ai.md)
+- [Biblioteka `date-a-scientist` - instalacja i problemy](./pages/03_date_a_scientist.md)
+- [Conda - instalacja, konfiguracja i błędy](./pages/04_conda.md)
+- [Visual Studio Code - instalacja i konfiguracja](./pages/05_vscode.md)
+- [Streamlit Community Cloud - problemy](./pages/06_streamlit_community_cloud.md)
+- [AWS - Amazon Web Services - rejestracja i konfiguracja](./pages/07_aws.md)
+- [Digital Ocean - rejestracja i konfiguracja](./pages/08_digital_ocean.md)
+- [Google Meet - konfiguracja i problemy](./pages/09_google_meet.md)
+- [Różne - inne pytania i problemy](./pages/10_other.md)

@@ -4,7 +4,6 @@ tags:
     - screen
     - zip
     - zakładki
-    - problem
     - zadanie domowe
     - praca domowa
     - prywatna wiadomość
@@ -24,7 +23,7 @@ tags:
     - odpowiedzi
 ---
 
-# Jak zacząć pracę z kursem?
+# **Jak zacząć pracę z kursem?**
 
 Witajcie w przewodniku, który pomoże Wam rozpocząć przygodę z kursem. Znajdziecie tu praktyczne wskazówki i instrukcje.
 
@@ -43,7 +42,8 @@ Mogą one występować w postaci:
     **[FAQ - zbiór najczęściej zadawanych pytań](/od-zera-do-ai-faq/#pytania-odpowiedzi)** 
     
     Znajdziecie tam przykłady problemów wraz z wytłumaczeniem i dokładną instrukcją postępowania.
-## Tip 1. Jak pracować z lekcjami?
+
+## **Tip 1. Jak pracować z lekcjami?**
 
 
 1. Tryb - oglądanie, słuchanie, czytanie.
@@ -80,7 +80,8 @@ Mogą one występować w postaci:
     Pobierz plik > naciśnij ikonę **Pobrane pliki** > wybierz najnowszy pobrany plik, złap go i przenieś do drzewa plików w notebooku
 
     ![](./assets/getting_started__tip_4__easy_download.png)
-## Tip 2. Kolejność lekcji na platformie
+
+## **Tip 2. Kolejność lekcji na platformie**
 
 Jak przechodzić lekcje chronologicznie?
 
@@ -95,7 +96,7 @@ Pod każdą lekcją widnieje spis zawartości kursu. Możesz tam zobaczyć, w kt
     ![](./assets/getting_started__tip_3__nex_lesson.png)
 
 
-## Tip 3. Gdzie zapisywać materiały?
+## **Tip 3. Gdzie zapisywać materiały?**
 
 Z czasem trwania kursu, plików i materiałów będzie coraz więcej. Dlatego zadbaj od początku o zbieranie plików w jednym folderze, z podziałem na moduły.
 
@@ -124,7 +125,7 @@ Instrukcja:
 
     ![](./assets/getting_started__tip_1__inner_directory.png)
 
-## Tip 4. Zapisywanie stron do paska zakładek
+## **Tip 4. Zapisywanie stron do paska zakładek**
 
 W poszczególnych lekcjach będą pojawiały się linki do stron internetowych. Do niektórych stron będziemy często wracać w trakcie trwania kursu. Dlatego polecamy, abyś od początku zapisywał/zapisywała sobie te strony w pasku zakładek w przeglądarce, lub w folderze zakładek w przeglądarce. Dzięki temu, będziesz miał/miała je pod ręką. 
 
@@ -164,7 +165,7 @@ W poszczególnych lekcjach będą pojawiały się linki do stron internetowych. 
     ![](./assets/getting_started__tip_2__bookmarsk_folder.png)
 
 
-## Tip 5. Jak zrobić screena?
+## **Tip 5. Jak zrobić screena?**
 
 Screen - elektroniczny zapis, zrzut obrazu aktualnie wyświetlanego na ekranie komputera. To tak jakby zrobić zdjęcie tego co widzimy na naszym komputerze/monitorze. Screen można zapisać jako plik, można go do kogoś przesłać, coś na nim zaznaczyć, narysować. 
 Robienie screenów będzie przydatne w kursie, aby pokazywać zadania domowe albo formułować pytania, zgłaszać problemy.
@@ -206,7 +207,7 @@ Robienie screenów będzie przydatne w kursie, aby pokazywać zadania domowe alb
     
     ![](./assets/getting_started__tip_5__draw.png)
 
-## Tip 6. Jak i gdzie zgłaszać problem?
+## **Tip 6. Jak i gdzie zgłaszać problem?**
 
 Jeśli w trakcie przechodzenia kursu, wystąpi u Ciebie problem i nie znajdziesz rozwiązania w dziale FAQ, napisz do nas na Discordzie.
 
@@ -253,7 +254,7 @@ Aby zgłosić problem na Discordzie, który jest miejscem wymiany doświadczeń 
 
     **Czekaj na odpowiedź.**
 
-## Tip 7. Gdzie zamieścić zadanie domowe na Discordzie?
+## **Tip 7. Gdzie zamieścić zadanie domowe na Discordzie?**
 
 Po zakończeniu modułu, w którym jest zadanie domowe, możesz je rozwiązać i wysłać na Discordzie do sprawdzenia.
 
@@ -273,7 +274,7 @@ Po zakończeniu modułu, w którym jest zadanie domowe, możesz je rozwiązać i
 
 1. **Gotowe!** Czekamy na odpowiedź!
 
-## Tip 8. Jak spakować pliki do ZIP-a?
+## **Tip 8. Jak spakować pliki do ZIP-a?**
 
 W przypadku, gdy będziesz miał/miała wiele plików w folderze z zadaniem domowym, aby je wysłać, można skompresować ten cały folder do formatu ZIP. Spakowanie plików pozwala na wysłanie kilku plików jako jednego pliku, a kompresja pozwala, zmniejszyć rozmiar przesyłanych danych, co ułatwia ich wysyłanie. Sam proces jest szybki i prosty.
 
@@ -287,7 +288,7 @@ Pod folderem, który wybrałeś/wybrałaś, pojawi się skompresowany folder w f
 
 **I gotowe!** Tak przygotowany folder np. z zadaniem domowym, możesz wysyłać na Discordzie.
 
-## Tip 9. Jak wysłać prywatną wiadomość na Discordzie?
+## **Tip 9. Jak wysłać prywatną wiadomość na Discordzie?**
 
 Na Discordzie istnieje możliwość wysłania wiadomości prywatnej, bezpośrednio do jednej, wybranej osoby. W oknie Discorda po prawej stronie, znajduje się lista członków. W przypadku naszej grupy**: "GOTOIT Data Science"** u góry będziemy widzieli listę mentorów i osób z zespołu, a pod spodem grupę kursantów.
 

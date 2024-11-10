@@ -1,5 +1,14 @@
+---
+tags:
+    - Moduł 1
+    - OpenAI
+    - Klucz API
+    - Logowanie
+    - Secret key
+    - API key
+---
 
-# **Problemy z OpenAI**
+# **OpenAI - klucz API, logowanie**
 
 **OpenAI** to niezależna organizacja badawcza zajmująca się sztuczną inteligencją (AI). Została założona w grudniu 2015 roku z misją promowania i tworzenia przyjaznej dla człowieka sztucznej inteligencji na korzyść całej ludzkości.
 
