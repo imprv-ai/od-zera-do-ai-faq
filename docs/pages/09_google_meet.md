@@ -2,7 +2,6 @@
 tags: 
     - Google Meet
     - wideokonferencja
-    - konfiguracja
     - dźwięk
     - mikrofon
     - kamera

@@ -1,23 +1,12 @@
 ---
 tags: 
-    - moduł 3
-    - modul_3
+    - Moduł 3
     - conda
     - anaconda prompt
-    - instalacja
-    - konfiguracja
-    - błędy
-    - jupyter
     - jupyter lab
     - notebook
-    - folder
-    - pusty
-    - restart
     - kernel
-    - error
-    - plot
     - plot error
-    - str
 ---
 
 # **Conda - instalacja, konfiguracja i błędy**

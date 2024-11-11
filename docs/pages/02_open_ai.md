@@ -3,7 +3,6 @@ tags:
     - Moduł 1
     - OpenAI
     - Klucz API
-    - Logowanie
     - Secret key
     - API key
 ---

@@ -7,8 +7,6 @@ tags:
     - kod
     - plugin
     - rozszerzenie
-    - instalacja
-    - konfiguracja
     - terminal
     - konsola
     - paleta poleceń

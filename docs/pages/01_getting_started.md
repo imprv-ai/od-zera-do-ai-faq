@@ -3,24 +3,15 @@ tags:
     - discord
     - screen
     - zip
-    - zakładki
     - zadanie domowe
     - praca domowa
     - prywatna wiadomość
     - narzędzie wycinanie
-    - pasek zakładek
     - zgłoszenie problemu
     - kanał discord
-    - moduł
-    - kolejność lekcji
-    - zapisywanie materiałów
-    - praca z lekcjami
-    - kurs
     - poradnik
     - pomoc
     - FAQ
-    - pytania
-    - odpowiedzi
 ---
 
 # **Jak zacząć pracę z kursem?**

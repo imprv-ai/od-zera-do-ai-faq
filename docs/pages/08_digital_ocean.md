@@ -4,7 +4,6 @@ tags:
     - Digital Ocean
     - Chmura
     - Cloud
-    - 200$
 ---
 # **Digital Ocean - rejestracja i konfiguracja**
 

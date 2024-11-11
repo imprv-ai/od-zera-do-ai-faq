@@ -1,6 +1,5 @@
 ---
 tags:
-    - Streamlit
     - Streamlit Community Cloud
     - Moduł 6
     - wdrożenie
