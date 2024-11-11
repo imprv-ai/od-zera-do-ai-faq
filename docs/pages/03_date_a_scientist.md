@@ -2,16 +2,12 @@
 tags:
     - Moduł 1
     - date-a-scientist
-    - instalacja
     - biblioteka
     - anaconda
     - UnicodeEncodeError
     - FileNotFoundError
-    - Microsoft Visual C++
-    - error
     - ModuleNotFoundError
     - NameError
-    - could not build wheels
 ---
 
 # **Biblioteka `date-a-scientist` - instalacja i problemy**
