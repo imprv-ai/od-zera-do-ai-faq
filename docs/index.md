@@ -16,4 +16,5 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [AWS - Amazon Web Services - rejestracja i konfiguracja](./pages/07_aws.md)
 - [Digital Ocean - rejestracja i konfiguracja](./pages/08_digital_ocean.md)
 - [Google Meet - konfiguracja i problemy](./pages/09_google_meet.md)
-- [Różne - inne pytania i problemy](./pages/10_other.md)
+- [Git - problemy i podstawowe komendy](./pages/10_git.md)
+- [Różne - inne pytania i problemy](./pages/11_other.md)
