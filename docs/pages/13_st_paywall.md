@@ -42,6 +42,11 @@ from st_paywall import add_auth
 Oraz zamiast obecnej funkcji `add_bmc_auth()` ponownie użyć funkcji `add_auth()`, z tymi samymi parametrami co w załączonych plikach aplikacji.
 
 ### Poprawny format pliku `secrets.toml`
+Aby poprawnie używać pliku z sekretami, pamiętaj o tych prostych zasadach:
+
+1. Dodaj znacznik `[auth]` przed danymi do logowania kontem Google.
+1. Umieść dane logowania **na końcu pliku**. Dzięki temu Streamlit nie pomyli ich z innymi danymi, takimi jak klucz OpenAI czy hasła do bazy danych.
+
 ```Python
 payment_provider = "bmac" 
 bmac_api_key = "..."
