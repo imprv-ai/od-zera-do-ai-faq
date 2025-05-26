@@ -19,3 +19,4 @@ Poniżej znajdziesz listę pytań, które pojawiają się najczęściej w trak
 - [Git - problemy i podstawowe komendy](./pages/10_git.md)
 - [Różne - inne pytania i problemy](./pages/11_other.md)
 - [Anaconda Cloud - problemy](./pages/12_anaconda_cloud.md)
+- [St-paywall - problemy](./pages/13_st_paywall.md)
