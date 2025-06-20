@@ -193,7 +193,6 @@ Błąd wynika z użycia niekompatybilnej wersji biblioteki `numba`. Atrybut `gen
 pip install --upgrade numba
 ```
 
-
 ## **Problemy z wyświetlaniem interaktywnych widgetów Jupyter**
 
 Problem występuje podczas używania interaktywnych elementów (widgetów) w Jupyter Notebook/Lab. Widgety mogą nie wyświetlać się poprawnie lub wyświetlać komunikaty o błędach.
@@ -232,7 +231,7 @@ Jeżeli problem nadal występuje, to możesz spróbować:
 - Uruchomić notebook w innej przeglądarce.
 
 
-## **Brak biblioteki PyArrow wymagany przez komponenty Streamlit**
+## **Błąd PyArrow w Streamlit**
 
 Problem występuje podczas uruchamiania aplikacji Streamlit używającej niestandardowych komponentów. System wyświetla komunikat błędu:
 
@@ -308,6 +307,45 @@ Błąd wystąpuje z powodu niekompatybilności między wersjami biblioteki `open
     ```
 
 **Uwaga:** W przypadku utrzymywania się problemów sprawdź czy wszystkie zależności są zaktualizowane i zgodne z najnowszą wersją OpenAI API.
+
+## **Błąd `DataFrameSchema` w bibliotece Pandera**
+
+Problem występuje podczas próby użycia `DataFrameSchema` z biblioteki Pandera. System wyświetla komunikat błędu:
+
+```
+AttributeError: module 'pandera' has no attribute 'DataFrameSchema'
+```
+
+Dodatkowo podczas importu biblioteki Pandera może pojawić się ostrzeżenie:
+
+```
+UserWarning: Pandas and numpy have been removed from the base pandera dependencies. 
+Please install pandas as part of your environment's dependencies or install the pandas extra with:
+pip install pandas pandera
+# or
+pip install 'pandera[pandas]'
+```
+
+![](./assets/pandera__schema_error.png)
+![](./assets/pandera__import_output.png)
+
+**Przyczyna:**
+Błąd wystąpuje z powodu zmian w strukturze biblioteki Pandera w nowszych wersjach. Od określonej wersji biblioteki `pandas` i `numpy` nie są automatycznie instalowane jako podstawowe zależności Pandera, co powoduje:
+
+- Brak dostępu do klasy `DataFrameSchema`
+- Problemy z importowaniem komponentów związanych z DataFrames
+- Niekompatybilność między wersjami Pandera a środowiskiem
+
+**Rozwiązanie:**
+
+1. Upewnij się, że masz aktywne odpowiednie środowisko wirtualne.
+
+2. Zainstaluj starszą wersję Pandera (0.22.1):
+
+    ```bash
+    pip install pandera==0.22.1
+    ```
+3. Zrestartuj kernel Jupyter lub uruchom ponownie aplikację.
 
 
 ## **Gdy próbuję eksportować notebooka do PDF dostaję błąd `nbconvert failed: Pandoc wasn't found`**
