@@ -242,7 +242,7 @@ streamlit.errors.StreamlitAPIException: To use Custom Components in Streamlit, y
 ![](./assets/pyarrow__downgrade_version.png)
 
 **Przyczyna:**
-Błąd wystąpuje gdy aplikacja Streamlit próbuje użyć niestandardowych komponentów, ale brakuje biblioteki `PyArrow` lub została zainstalowana w niekompatybilnej wersji (np. `19.0.1`). PyArrow jest wymagana do serializacji danych między aplikacją a komponentami i zapewnia wydajną komunikację w formacie Apache Arrow.
+Błąd występuje, gdy aplikacja Streamlit próbuje użyć niestandardowych komponentów, ale brakuje biblioteki `PyArrow` lub została zainstalowana w niekompatybilnej wersji (np. `19.0.1`). PyArrow jest wymagana do serializacji danych między aplikacją a komponentami i zapewnia wydajną komunikację w formacie Apache Arrow.
 
 **Rozwiązanie:**
 
@@ -274,7 +274,7 @@ TypeError: Client.__init__() got an unexpected keyword argument 'proxies'
 ![](./assets/proxies__error.png)
 
 **Przyczyna:**
-Błąd wystąpuje z powodu niekompatybilności między wersjami biblioteki `openai`. W starszych wersjach biblioteki OpenAI konstruktor klasy `Client` akceptował argument `proxies`, który został usunięty w nowszych wersjach. Problem może wystąpić gdy:
+Błąd występuje z powodu niekompatybilności między wersjami biblioteki `openai`. W starszych wersjach biblioteki OpenAI konstruktor klasy `Client` akceptował argument `proxies`, który został usunięty w nowszych wersjach. Problem może wystąpić gdy:
 
 - Aplikacja używa starszego API OpenAI z nowszą wersją biblioteki
 - Kod zawiera przestarzałe parametry inicjalizacji klienta
@@ -330,7 +330,7 @@ pip install 'pandera[pandas]'
 ![](./assets/pandera__import_output.png)
 
 **Przyczyna:**
-Błąd wystąpuje z powodu zmian w strukturze biblioteki Pandera w nowszych wersjach. Od określonej wersji biblioteki `pandas` i `numpy` nie są automatycznie instalowane jako podstawowe zależności Pandera, co powoduje:
+Błąd występuje z powodu zmian w strukturze biblioteki Pandera w nowszych wersjach. Od określonej wersji biblioteki `pandas` i `numpy` nie są automatycznie instalowane jako podstawowe zależności Pandera, co powoduje:
 
 - Brak dostępu do klasy `DataFrameSchema`
 - Problemy z importowaniem komponentów związanych z DataFrames
