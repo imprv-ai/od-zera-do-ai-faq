@@ -65,6 +65,70 @@ Niektóre polecenia w Condzie działają poprawnie, ale gdy próbuję narysować
 
 Dla zainteresowanych: przyczyną występowania błędu jest walidacja w bibliotece [pandasai](https://github.com/Sinaptik-AI/pandas-ai/blob/e011e8ffdc8a2cd88db07c4440f331540a175648/pandasai/helpers/output_validator.py#L99).
 
+### **Błąd `conda is not recognized` w terminalu VS Code**
+
+Problem występuje podczas próby aktywacji środowiska wirtualnego conda w terminalu VS Code. System wyświetla komunikat:
+
+```
+The term 'conda' is not recognized as the name of a cmdlet, function, script file, or operable program.
+```
+
+![](./assets/conda__is_not_recognized.png)
+
+**Przyczyna:**
+Terminal VS Code nie ma skonfigurowanego dostępu do poleceń conda, ponieważ PowerShell nie został zainicjalizowany z Anacondą.
+
+**Rozwiązanie:**
+
+**Metoda 1 - Restart terminala:**
+
+1. Zamknij terminal w VS Code (kliknij ikonę kosza).
+![](./assets/conda__kill_terminal.png)
+2. Otwórz nowy terminal i poczekaj kilka sekund na pełne wczytanie.
+![](./assets/conda__new_terminal.png)
+3. Spróbuj ponownie aktywować środowisko.
+
+**Metoda 2 - Inicjalizacja conda (jeśli metoda 1 nie pomogła):**
+
+1. Zamknij VS Code.
+1. Otwórz **Windows PowerShell** jako administrator:
+
+    * Kliknij prawym przyciskiem myszy na ikonę **Windows PowerShell**
+    * Wybierz opcję **"Uruchom jako administrator"** (lub **"Run as administrator"** w zależności od języka systemowego)
+
+    ![](./assets/conda__powershell_run_as_administrator.png)
+
+1. Sprawdź aktualne ustawienia ExecutionPolicy (uprawnienia do uruchamiania skryptów):
+   ```powershell
+   Get-ExecutionPolicy
+   ```
+1. Jeśli wynik to `Restricted` lub `Undefined`, zmień na `RemoteSigned`:
+   ```powershell
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+   ```
+1. Potwierdź zmianę wpisując `Y` i naciśnij Enter.
+1. Sprawdź czy ustawienia zostały zmienione (powinny być `RemoteSigned`):
+   ```powershell
+   Get-ExecutionPolicy
+   ```
+1. Otwórz **Anaconda Prompt** (również jako administrator).
+1. Wykonaj inicjalizację PowerShell:
+   ```bash
+   conda init powershell
+   ```
+1. Otwórz ponownie VS Code i użyj nowego terminala (kliknij ikonę kosza i otwórz nowy terminal - sposób opisany w **Metoda 1 - Restart terminala**).
+
+    > **⚠️ UWAGA:** Odczekaj około 30 sekund na pełne wczytanie terminala i wszystkich procesów.
+
+1. Sprawdź czy conda działa poprawnie:
+   ```bash
+   conda --version
+   ```
+1. Jeśli wszystko działa poprawnie (powinna się pojawić wersja conda), aktywuj swoje środowisko wirtualne:
+    ```bash
+    conda activate nazwa_środowiska
+    ```
+
 
 ## **Problemy z jupyter lab / notebooki**
 

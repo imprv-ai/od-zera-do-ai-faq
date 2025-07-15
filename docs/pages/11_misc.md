@@ -29,44 +29,6 @@ W tym przypadku błąd `KeyError` wskazuje na brak kolumny `Płeć` w Twoim Data
     ![](./assets/streamlit__key_error_check_sep.png)
 
 
-## **Błąd `conda is not recognized` w terminalu VS Code**
-
-Problem występuje podczas próby aktywacji środowiska wirtualnego conda w terminalu VS Code. System wyświetla komunikat:
-
-```
-The term 'conda' is not recognized as the name of a cmdlet, function, script file, or operable program.
-```
-
-![](./assets/conda__is_not_recognized.png)
-
-**Przyczyna:**
-Terminal VS Code nie ma skonfigurowanego dostępu do poleceń conda, ponieważ PowerShell nie został zainicjalizowany z Anacondą.
-
-**Rozwiązanie:**
-
-**Metoda 1 - Restart terminala:**
-
-1. Zamknij terminal w VS Code (kliknij ikonę kosza).
-![](./assets/conda__kill_terminal.png)
-2. Otwórz nowy terminal i poczekaj kilka sekund na pełne wczytanie.
-![](./assets/conda__new_terminal.png)
-3. Spróbuj ponownie aktywować środowisko.
-
-**Metoda 2 - Inicjalizacja conda (jeśli metoda 1 nie pomogła):**
-
-1. Zamknij VS Code.
-2. Otwórz **Anaconda Prompt**.
-3. Aktywuj swoje środowisko wirtualne:
-   ```bash
-   conda activate nazwa_środowiska
-   ```
-4. Wykonaj inicjalizację PowerShell:
-   ```bash
-   conda init powershell
-   ```
-5. Uruchom ponownie VS Code.
-6. Otwórz terminal i spróbuj aktywować środowisko.
-
 
 ## **Mapa cieplna wyświetla się bez wartości numerycznych**
 
