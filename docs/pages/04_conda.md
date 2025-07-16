@@ -81,7 +81,7 @@ conda activate nazwa_środowiska
 **Utworzenie nowego środowiska wirtualnego conda**
 
 ```bash
-conda create -n nazwa_środowiska
+conda create -n nazwa_środowiska python=3.11
 ```
 
 **Deaktywacja środowiska wirtualnego conda**
