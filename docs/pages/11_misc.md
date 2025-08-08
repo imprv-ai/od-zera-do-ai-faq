@@ -310,6 +310,64 @@ Błąd występuje z powodu zmian w strukturze biblioteki Pandera w nowszych wers
 3. Zrestartuj kernel Jupyter lub uruchom ponownie aplikację.
 
 
+## **Błąd `TypeError: 'module' object is not callable` przy użyciu `getpass` w Jupyter**
+
+Problem pojawia się przy wczytywaniu np. klucza OpenAI w notebooku:
+
+```
+openai_key = getpass("Wprowadź swój klucz OpenAI: ")
+TypeError: 'module' object is not callable
+```
+
+![](./assets/getpassmodule_object_is_not_callable.png)
+
+**Przyczyna:** Prawdopodobnie kernel „gubi” import między komórkami — nazwa `getpass` dla modułu i funkcji jest taka sama i zostaje nadpisana przez moduł.
+
+**Rozwiązanie:**
+
+1. Przenieś import `getpass` do komórki, w której chcesz używać funkcji `getpass`. 
+
+    ![](./assets/getpassmodule_object_is_not_callable_relocation.png)
+
+    Czyli w tym przypadku do komórki, w której wczytujesz klucz OpenAI. Docelowo komórka powinna wyglądać tak:
+
+    ```python
+    from getpass import getpass
+    openai_key = getpass("Wprowadź swój klucz OpenAI: ")
+    ```
+
+1. Zrestartuj kernel i uruchom notebook od początku, aby wyczyścić poprzednie definicje.
+
+## **Błąd `AttributeError: 'Langfuse' object has no attribute 'trace'` w Langfuse**
+
+![](./assets/langfuse__attributeerror_no_attribute_trace.png)
+
+
+**Przyczyna:** Zmiany pomiędzy wersjami Langfuse. Część metod (np. `trace`) nie jest dostępna w nowszych wydaniach, co powoduje niezgodność z istniejącym kodem.
+
+**Rozwiązanie:** Zainstaluj sprawdzoną wersję biblioteki zgodną z Twoim kodem i uruchom środowisko ponownie.
+
+1. Aktywuj właściwe środowisko wirtualne (domyślnie w kursie jest to `od_zera_do_ai`):
+
+    ```bash
+    conda activate od_zera_do_ai
+    ```
+
+1. Zainstaluj rekomendowaną wersję Langfuse:
+
+    ```bash
+    pip install langfuse==2.51.4
+    ```
+
+1. Sprawdź zainstalowaną wersję, powinna być równa `2.51.4`:
+
+    ```bash
+    pip show langfuse
+    ```
+
+1. Jeżeli wszystko jest ok, to zrestartuj kernel Jupyter/VS Code i uruchom ponownie notebook.
+
+
 ## **Gdy próbuję eksportować notebooka do PDF dostaję błąd `nbconvert failed: Pandoc wasn't found`**
 
 Jeżeli próbujesz wyeksportować notebooka do PDF i dostajesz błąd:
