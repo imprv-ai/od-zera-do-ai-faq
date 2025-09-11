@@ -239,3 +239,97 @@ Jeśli podczas uruchamiania _jupyter lab_ w konsoli pojawia się taki błąd, oz
 1. Na koniec uruchom `jupyter lab`
 
     ![](./assets/jupyter_lab__second_opening_run_jupyter.png)
+
+## **Jak stworzyć nowe środowisko Conda z pliku `environment.yml`**
+
+Poniższa instrukcja pokazuje, jak utworzyć gotowe środowisko na podstawie przygotowanego pliku `environment.yml`. To najprostszy sposób, aby wszyscy mieli identyczną konfigurację pakietów.
+
+### **1) Pobierz plik `environment.yml`**
+
+- **Pobierz plik:** [environment.yml](./assets/environment.yml)
+- Zapisz plik w wybranym folderze (np. `Pulpit/od_zera_do_ai`).
+
+### **2) Otwórz terminal Anaconda Prompt**
+
+### **3) Przejdź do folderu z plikiem**
+
+Uruchom w terminalu Anaconda Prompt następującą komendę:
+
+dla Windows:
+
+```bash
+cd C:\Users\TwojeImie\Desktop\od_zera_do_ai
+```
+
+dla macOS/Linux:
+
+```bash
+cd ~/Desktop/od_zera_do_ai
+```
+
+!!! warning "Uwaga"
+    Tutaj wstaw **swoją** ścieżkę do folderu!
+
+!!! tip "Szybciej z uzupełnianiem ścieżki"
+    Zamiast ręcznie wpisywać ścieżkę do folderu, po wpisaniu `cd` i spacji możesz po prostu przeciągnąć folder `od_zera_do_ai` do terminala — ścieżka zostanie wtedy automatycznie uzupełniona.
+
+Upewnij się, że w tym folderze (w tym projekcie `od_zera_do_ai`) znajduje się pobrany wcześniej plik `environment.yml`.
+
+### **4) Utwórz środowisko na podstawie pliku**
+
+Domyślnie zostanie użyta nazwa wskazana w pliku (w tym projekcie: `od_zera_do_ai_v2`), w konsoli wpisz:
+
+```bash
+conda env create -f environment.yml
+```
+
+Jeśli chcesz wymusić własną nazwę środowiska, wpisz:
+
+```bash
+conda env create -f environment.yml -n moja_nazwa_srodowiska
+```
+
+Podczas instalacji Conda może poprosić o potwierdzenie – wpisz `y` i wciśnij Enter.
+
+!!! warning "Uwaga"
+    Cały proces może zająć nawet około 10 minut. Zależy to od szybkości internetu i mocy komputera. Zatem nie zamykaj terminala ani nie zamykaj środowiska przed jego zakończeniem.
+
+### **5) Aktywuj środowisko**
+
+Po pomyślnym zakończeniu instalacji, aktywuj środowisko:
+
+```bash
+conda activate od_zera_do_ai_v2
+```
+
+Jeśli użyłeś własnej nazwy, aktywuj odpowiednio: `conda activate moja_nazwa_srodowiska`.
+
+### **6) Szybka weryfikacja**
+
+```bash
+conda list
+python --version
+jupyter lab --version
+```
+
+Jeżeli widzisz listę pakietów i wersje poleceń się wyświetlają – środowisko działa.
+
+### **7) Jak zaktualizować istniejące środowisko z nowego pliku?**
+
+Gdy plik `environment.yml` zostanie zaktualizowany (np. dojdą pakiety), zaktualizuj swoje środowisko:
+
+```bash
+conda env update -f environment.yml --prune
+```
+
+Flaga `--prune` usuwa pakiety, które nie występują już w pliku.
+
+### **8) Najczęstsze problemy i rozwiązania**
+
+- **`conda is not recognized`**: zainicjalizuj Condę w PowerShell albo użyj Anaconda Prompt (patrz sekcja wyżej o konfiguracji Condy).
+- **`SpecNotFound: environment.yml`**: upewnij się, że jesteś w katalogu z plikiem (`dir` na Windows lub `ls` na macOS/Linux).
+- **Środowisko już istnieje**: użyj aktualizacji (`conda env update -f environment.yml --prune`) albo usuń stare środowisko i utwórz ponownie:
+  ```bash
+  conda env remove -n od_zera_do_ai_v2
+  conda env create -f environment.yml
+  ```
