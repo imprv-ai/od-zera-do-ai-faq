@@ -277,19 +277,21 @@ Upewnij się, że w tym folderze (w tym projekcie `od_zera_do_ai`) znajduje się
 
 ### **4) Utwórz środowisko na podstawie pliku**
 
-Domyślnie zostanie użyta nazwa wskazana w pliku (w tym projekcie: `od_zera_do_ai_v2`), w konsoli wpisz:
+Wybierz odpowiednią komendę:
+
+- domyślnie zostanie użyta nazwa środowiska wskazana w pliku (`od_zera_do_ai_v2`):
 
 ```bash
 conda env create -f environment.yml
 ```
 
-Jeśli chcesz wymusić własną nazwę środowiska, wpisz:
+- jeśli chcesz wymusić własną nazwę środowiska:
 
 ```bash
 conda env create -f environment.yml -n moja_nazwa_srodowiska
 ```
 
-Podczas instalacji Conda może poprosić o potwierdzenie – wpisz `y` i wciśnij Enter.
+Podczas instalacji Conda może poprosić o potwierdzenie – wpisz `y` i naciśnij Enter.
 
 !!! warning "Uwaga"
     Cały proces może zająć nawet około 10 minut. Zależy to od szybkości internetu i mocy komputera. Zatem nie zamykaj terminala ani nie zamykaj środowiska przed jego zakończeniem.
