@@ -246,7 +246,7 @@ Poniższa instrukcja pokazuje, jak utworzyć gotowe środowisko na podstawie prz
 
 ### **1) Pobierz plik `environment.yml`**
 
-- **Pobierz plik:** [environment.yml](./assets/environment.yml)
+- **Pobierz plik:** <a href="../assets/environment.yml" download>environment.yml</a>
 - Zapisz plik w wybranym folderze (np. `Pulpit/od_zera_do_ai`).
 
 ### **2) Otwórz terminal Anaconda Prompt**
