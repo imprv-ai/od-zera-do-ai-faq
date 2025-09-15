@@ -32,7 +32,7 @@ def insert_usage(email, output_tokens, input_tokens, input_text):
     with get_connection() as conn:
         with conn.cursor() as cur:
             cur.execute("""
-                INSERT INTO usages2 (google_user_email, output_tokens, input_tokens, input_text) VALUES (%s, %s, %s, %s)
+                INSERT INTO usages (google_user_email, output_tokens, input_tokens, input_text) VALUES (%s, %s, %s, %s)
             """, (email, output_tokens, input_tokens, input_text))
             conn.commit()
 
@@ -42,7 +42,7 @@ def get_current_month_usage_df(email):
         now = datetime.now(timezone.utc)
         start_date = datetime(now.year, now.month, 1)
         with conn.cursor() as cur:
-            cur.execute("SELECT * FROM usages2 WHERE google_user_email = %s AND created_at >= %s", (email, start_date))
+            cur.execute("SELECT * FROM usages WHERE google_user_email = %s AND created_at >= %s", (email, start_date))
             rows = cur.fetchall()
             columns = [desc[0] for desc in cur.description]
             df_usage = pd.DataFrame(rows, columns=columns)
