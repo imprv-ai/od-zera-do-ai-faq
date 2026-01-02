@@ -1,0 +1,1105 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Strona zawierająca zbiór tutoriali i instrukcji pozwalających na zaadresowanie problemów technicznych, na które napotykają uczestnicy kursu `Od zera do AI`.">
+      
+      
+        <meta name="author" content="IMPRV.ai dev team and supporters">
+      
+      
+        <link rel="canonical" href="https://imprv-ai.github.io/od-zera-do-ai-faq/pages/03_date_a_scientist/">
+      
+      
+        <link rel="prev" href="../02_open_ai/">
+      
+      
+        <link rel="next" href="../04_conda/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Biblioteka date-a-scientist - instalacja i problemy - FAQ</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#biblioteka-date-a-scientist-instalacja-i-problemy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FAQ" class="md-header__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FAQ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Biblioteka date-a-scientist - instalacja i problemy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/imprv-ai/od-zera-do-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/od-zera-do-ai-faq
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FAQ" class="md-nav__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FAQ
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/imprv-ai/od-zera-do-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/od-zera-do-ai-faq
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ dla kursu Od zera do AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jak zacząć pracę z kursem?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_open_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI - klucz API, logowanie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biblioteka date-a-scientist - instalacja i problemy
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biblioteka date-a-scientist - instalacja i problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jak-zainstalowac-biblioteke-date-a-scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak zainstalować bibliotekę date-a-scientist?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widze-bad-error-could-not-find-a-version-that-satisfies-the-requirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Widzę błąd ERROR: Could not find a version that satisfies the requirement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#po-instalacji-pakietu-date-a-scientist-z-anaconda-cloud-nie-moge-go-zaimportowac-albo-notebook-go-nie-widzi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Po instalacji pakietu date-a-scientist z Anaconda Cloud nie mogę go zaimportować albo notebook go nie widzi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widze-bad-unicodeencodeerror-jak-wpisuje-polskie-znaki-w-date-a-scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Widzę błąd UnicodeEncodeError jak wpisuję polskie znaki w date-a-scientist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nie-moge-zainstalowac-pakietu-date-a-scientist-widze-ogromny-komunikat-o-bedzie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nie mogę zainstalować pakietu date-a-scientist. Widzę ogromny komunikat o błędzie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w-trakcie-instalacji-pakietu-date-a-scientist-pojawiaja-sie-rozne-kolorowe-komunikaty-o-ostrzezeniach-i-bedach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        W trakcie instalacji pakietu date-a-scientist pojawiają się różne kolorowe komunikaty o ostrzeżeniach i błędach
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widze-bad-filenotfounderror-podczas-pracy-z-date-a-scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Widzę błąd FileNotFoundError podczas pracy z date-a-scientist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_conda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conda - instalacja, konfiguracja i błędy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Studio Code - instalacja i konfiguracja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_streamlit_community_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlit Community Cloud - problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS - Amazon Web Services - rejestracja i konfiguracja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_digital_ocean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Ocean - rejestracja i konfiguracja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_google_meet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Meet - konfiguracja i problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git - problemy i podstawowe komendy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Różne - inne pytania i problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_anaconda_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anaconda Cloud - problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_st_paywall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    St-paywall - nowa implementacja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jak-zainstalowac-biblioteke-date-a-scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak zainstalować bibliotekę date-a-scientist?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widze-bad-error-could-not-find-a-version-that-satisfies-the-requirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Widzę błąd ERROR: Could not find a version that satisfies the requirement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#po-instalacji-pakietu-date-a-scientist-z-anaconda-cloud-nie-moge-go-zaimportowac-albo-notebook-go-nie-widzi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Po instalacji pakietu date-a-scientist z Anaconda Cloud nie mogę go zaimportować albo notebook go nie widzi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widze-bad-unicodeencodeerror-jak-wpisuje-polskie-znaki-w-date-a-scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Widzę błąd UnicodeEncodeError jak wpisuję polskie znaki w date-a-scientist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nie-moge-zainstalowac-pakietu-date-a-scientist-widze-ogromny-komunikat-o-bedzie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nie mogę zainstalować pakietu date-a-scientist. Widzę ogromny komunikat o błędzie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w-trakcie-instalacji-pakietu-date-a-scientist-pojawiaja-sie-rozne-kolorowe-komunikaty-o-ostrzezeniach-i-bedach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        W trakcie instalacji pakietu date-a-scientist pojawiają się różne kolorowe komunikaty o ostrzeżeniach i błędach
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widze-bad-filenotfounderror-podczas-pracy-z-date-a-scientist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Widzę błąd FileNotFoundError podczas pracy z date-a-scientist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">FileNotFoundError</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">ModuleNotFoundError</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Moduł 1</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">NameError</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">UnicodeEncodeError</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">anaconda</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">biblioteka</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">date-a-scientist</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="biblioteka-date-a-scientist-instalacja-i-problemy"><strong>Biblioteka <code>date-a-scientist</code> - instalacja i problemy</strong><a class="headerlink" href="#biblioteka-date-a-scientist-instalacja-i-problemy" title="Permanent link">&para;</a></h1>
+<p><code>date-a-scientist</code> to narzędzie, które pozwala zadawać pytania dotyczące danych w formacie Pandas DataFrame bezpośrednio w Jupyter Notebooku, wykorzystując do tego język naturalny. Dzięki niemu możesz analizować i przetwarzać dane w sposób bardziej intuicyjny, formułując zapytania w prostym, zrozumiałym dla Ciebie języku, zamiast pisać skomplikowany kod.</p>
+<h2 id="jak-zainstalowac-biblioteke-date-a-scientist"><strong>Jak zainstalować bibliotekę <code>date-a-scientist</code>?</strong><a class="headerlink" href="#jak-zainstalowac-biblioteke-date-a-scientist" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Dodaj nową komórkę w jupyter notebook</li>
+<li>wklej i uruchom poniższy kod</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">date</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">scientist</span>
+</code></pre></div>
+<h2 id="widze-bad-error-could-not-find-a-version-that-satisfies-the-requirement"><strong>Widzę błąd <code>ERROR: Could not find a version that satisfies the requirement</code></strong><a class="headerlink" href="#widze-bad-error-could-not-find-a-version-that-satisfies-the-requirement" title="Permanent link">&para;</a></h2>
+<p>Sprawdź czy nie masz literówki w nazwie pakietu. Może być tak, że nazwa pakietu jest niepoprawna.</p>
+<ul>
+<li>Poprawna nazwa pakietu to <code>date-a-scientist</code> (z myślnikiem, a nie podkreślnikiem).</li>
+<li>Częstym błędem jest wpisywanie <code>data</code> zamiast <code>date</code>.</li>
+</ul>
+<p><img alt="" src="../assets/date_a_scientist__could_not_find_version.png" /></p>
+<h2 id="po-instalacji-pakietu-date-a-scientist-z-anaconda-cloud-nie-moge-go-zaimportowac-albo-notebook-go-nie-widzi"><strong>Po instalacji pakietu <code>date-a-scientist</code> z Anaconda Cloud nie mogę go zaimportować albo notebook go nie widzi</strong><a class="headerlink" href="#po-instalacji-pakietu-date-a-scientist-z-anaconda-cloud-nie-moge-go-zaimportowac-albo-notebook-go-nie-widzi" title="Permanent link">&para;</a></h2>
+<p>Jeśli wszystko wydaje się być w porządku, lecz pojawiają się poniższe błędy:</p>
+<p><img alt="" src="../assets/date_a_scientist__import_problem.png" /></p>
+<p>Spróbuj zrestartować kernel i uruchomić ponownie wszystkie komórki w notebooku Jupyter. Aby to zrobić, kliknij przycisk oznaczony na poniższym obrazku (<code>Restart the kernel and run all cells</code>).</p>
+<p><img alt="" src="../assets/jupyter_lab__notebook_kernel_restart.png" /></p>
+<p>Znajdziesz go w górnej części interfejsu, obok przycisków nawigacyjnych. Po kliknięciu tego przycisku kernel zostanie zrestartowany, a wszystkie komórki w notebooku zostaną uruchomione ponownie.</p>
+<h2 id="widze-bad-unicodeencodeerror-jak-wpisuje-polskie-znaki-w-date-a-scientist"><strong>Widzę błąd <code>UnicodeEncodeError</code> jak wpisuję polskie znaki w date-a-scientist</strong><a class="headerlink" href="#widze-bad-unicodeencodeerror-jak-wpisuje-polskie-znaki-w-date-a-scientist" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../assets/date_a_scientist__error__unicode_encode_error.png" /></p>
+<p>Żeby zaadresować ten problem wykonaj następujące kroki (na Windowsie):</p>
+<ol>
+<li>Otwórz <strong>Panel sterowania</strong>.</li>
+<li>Przejdź do <strong>System i zabezpieczenia &gt; System &gt; Zaawansowane ustawienia systemu</strong>.</li>
+<li>Kliknij przycisk <strong>Zmienne środowiskowe</strong>.</li>
+<li>W sekcji <strong>Zmienne systemowe</strong> kliknij <strong>Nowa</strong>.</li>
+<li>
+<p>Dodaj zmienną:</p>
+<ul>
+<li>Nazwa zmiennej: <code>PYTHONIOENCODING</code></li>
+<li>Wartość zmiennej: <code>utf-8</code></li>
+</ul>
+</li>
+<li>
+<p>Dodaj kolejną zmienną:</p>
+<ul>
+<li>Nazwa zmiennej: <code>PYTHONUTF8</code></li>
+<li>Wartość zmiennej: <code>1</code></li>
+</ul>
+</li>
+<li>
+<p>Zatwierdź zmiany, klikając <strong>OK</strong>.</p>
+</li>
+</ol>
+<p>I wówczas zamknij Jupyter Lab i otwórz ponownie</p>
+<h2 id="nie-moge-zainstalowac-pakietu-date-a-scientist-widze-ogromny-komunikat-o-bedzie"><strong>Nie mogę zainstalować pakietu <code>date-a-scientist</code>. Widzę ogromny komunikat o błędzie</strong><a class="headerlink" href="#nie-moge-zainstalowac-pakietu-date-a-scientist-widze-ogromny-komunikat-o-bedzie" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../assets/date_a_scientist__missing_microsoft_visual_cpp.png" /></p>
+<p>Jeśli widzisz błąd, w pierwszej kolejności sprawdzaj jego początek i koniec. Tam najczęściej jest najwięcej informacji. W tym przypadku zerknij na koniec komunikatu i zwróć uwagę czy zawiera informację o braku <code>Microsoft Visual C++</code>. Np w komunikacie: <code>error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/</code> Jeśli tak, to należy zainstalować <code>Microsoft Visual C++ Build Tools</code> z linku podanego w komunikacie. Ważne jest, aby podczas instalacji zaznaczyć opcję <code>Programowanie aplikacji klasycznych w C++</code>.</p>
+<p><img alt="" src="../assets/date_a_scientist__microsoft_visual_cpp_installation.png" /></p>
+<h2 id="w-trakcie-instalacji-pakietu-date-a-scientist-pojawiaja-sie-rozne-kolorowe-komunikaty-o-ostrzezeniach-i-bedach"><strong>W trakcie instalacji pakietu <code>date-a-scientist</code> pojawiają się różne kolorowe komunikaty o ostrzeżeniach i błędach</strong><a class="headerlink" href="#w-trakcie-instalacji-pakietu-date-a-scientist-pojawiaja-sie-rozne-kolorowe-komunikaty-o-ostrzezeniach-i-bedach" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../assets/date_a_scientist_installing_warnings_and_errors_main.png" /></p>
+<p>Jeśli zobaczysz całą serię ostrzeżeń i błędów podczas instalacji, nie musisz się martwić, o ile na końcu pojawi się komunikat o pomyślnym zainstalowaniu biblioteki. Dla pewności możesz ponownie uruchomić komórkę z instalacją – to powinno usunąć wszelkie ostrzeżenia.</p>
+<p><img alt="" src="../assets/date_a_scientist_installing_warnings_and_errors_successfully_installed.png" /></p>
+<p>Zaznaczony fragment świadczy o prawidłowym zainstalowaniu biblioteki.</p>
+<h2 id="widze-bad-filenotfounderror-podczas-pracy-z-date-a-scientist"><strong>Widzę błąd <code>FileNotFoundError</code> podczas pracy z <code>date-a-scientist</code></strong><a class="headerlink" href="#widze-bad-filenotfounderror-podczas-pracy-z-date-a-scientist" title="Permanent link">&para;</a></h2>
+<p>Jeżeli widzisz błąd jak na obrazku poniżej:</p>
+<p><img alt="" src="../assets/notebook__file_not_found.png" /></p>
+<p>Zwróć uwagę na początek komunikatu o błędzie .
+Jeśli jest tam informacja o braku pliku (np. <code>FileNotFoundError</code> jak na obrazku) to najprawdopodobniej masz błąd w ścieżce lub plik nie został pobrany we wskazane miejsce.</p>
+<ul>
+<li><strong>Sprawdź czy ścieżki są poprawne</strong> np. czy nie ma błędów w nazwach folderów - dużych liter, spacji itp. - domyślnie w kursie używamy folderu <em>datasets</em></li>
+<li><strong>Sprawdź czy plik istnieje we wskazanej lokalizacji</strong> np. czy nie został usunięty, czy nie zmieniła się jego nazwa - często przy ponownym pobraniu plików z kursu zmieniają się ich nazwy na <strong>nazwa_pliku(1).csv</strong> itp.</li>
+<li><strong>Sprawdź czy plik nie jest uszkodzony</strong> - jeśli plik został pobrany niekompletnie, to może być uszkodzony i nie da się go otworzyć</li>
+<li><strong>Sprawdź czy plik ma odpowiednie rozszerzenie</strong> - plik CSV powinien mieć rozszerzenie <code>.csv</code>, plik Excel <code>.xlsx</code>, notebook <code>.ipynb</code>, a plik python <code>.py</code></li>
+</ul>
+<p>Pliki z danymi znajdziesz w sekcji <code>Pliki do pobrania</code> pod filmami na platformie kursu.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
