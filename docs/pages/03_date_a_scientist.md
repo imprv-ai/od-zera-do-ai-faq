@@ -50,18 +50,16 @@ Znajdziesz go w górnej części interfejsu, obok przycisków nawigacyjnych. Po 
 Żeby zaadresować ten problem wykonaj następujące kroki (na Windowsie):
 
 1. Otwórz **Panel sterowania**.
-2. Przejdź do **System i zabezpieczenia > System > Zaawansowane ustawienia systemu**.
-3. Kliknij przycisk **Zmienne środowiskowe**.
-4. W sekcji **Zmienne systemowe** kliknij **Nowa**.
-5. Dodaj zmienną:
-
-   * Nazwa zmiennej: `PYTHONIOENCODING`
-   * Wartość zmiennej: `utf-8`
-6. Dodaj kolejną zmienną:
-
-   * Nazwa zmiennej: `PYTHONUTF8`
-   * Wartość zmiennej: `1`
-7. Zatwierdź zmiany, klikając **OK**.
+1. Przejdź do **System i zabezpieczenia > System > Zaawansowane ustawienia systemu**.
+1. Kliknij przycisk **Zmienne środowiskowe**.
+1. W sekcji **Zmienne systemowe** kliknij **Nowa**.
+1. Dodaj zmienną:
+    * Nazwa zmiennej: `PYTHONIOENCODING`
+    * Wartość zmiennej: `utf-8`
+1. Dodaj kolejną zmienną:
+    * Nazwa zmiennej: `PYTHONUTF8`
+    * Wartość zmiennej: `1`
+1. Zatwierdź zmiany, klikając **OK**.
 
 I wówczas zamknij Jupyter Lab i otwórz ponownie
 
