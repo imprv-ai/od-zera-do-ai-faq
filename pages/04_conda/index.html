@@ -1,0 +1,1655 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Strona zawierająca zbiór tutoriali i instrukcji pozwalających na zaadresowanie problemów technicznych, na które napotykają uczestnicy kursu `Od zera do AI`.">
+      
+      
+        <meta name="author" content="IMPRV.ai dev team and supporters">
+      
+      
+        <link rel="canonical" href="https://imprv-ai.github.io/od-zera-do-ai-faq/pages/04_conda/">
+      
+      
+        <link rel="prev" href="../03_date_a_scientist/">
+      
+      
+        <link rel="next" href="../05_vscode/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Conda - instalacja, konfiguracja i błędy - FAQ</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conda-instalacja-konfiguracja-i-bedy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="FAQ" class="md-header__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FAQ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conda - instalacja, konfiguracja i błędy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/imprv-ai/od-zera-do-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/od-zera-do-ai-faq
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="FAQ" class="md-nav__button md-logo" aria-label="FAQ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    FAQ
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/imprv-ai/od-zera-do-ai-faq" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    imprv-ai/od-zera-do-ai-faq
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ dla kursu Od zera do AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Pages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jak zacząć pracę z kursem?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_open_ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI - klucz API, logowanie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_date_a_scientist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Biblioteka date-a-scientist - instalacja i problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conda - instalacja, konfiguracja i błędy
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conda - instalacja, konfiguracja i błędy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jak-zainstalowac-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak zainstalować conda
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-skonfigurowac-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak skonfigurować conda
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak skonfigurować conda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jak-uatwic-sobie-prace-z-anaconda-prompt-na-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak ułatwić sobie pracę z Anaconda Prompt na Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-ustawic-srodowisko-conda-do-pracy-z-visual-studio-code-i-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak ustawić środowisko conda do pracy z Visual Studio Code i PowerShell
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak ustawić środowisko conda do pracy z Visual Studio Code i PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#film-instruktazowy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Film instruktażowy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#komendy-do-skopiowania-i-wklejenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Komendy do skopiowania i wklejenia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zainstalowaem-i-skonfigurowaem-conde-jednak-folder-modul_3-jest-pusty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zainstalowałem i skonfigurowałem condę, jednak folder modul_3 jest pusty
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bedy-w-conda-przyczyny-i-rozwiazania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błędy w Conda - Przyczyny i rozwiązania
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Błędy w Conda - Przyczyny i rozwiązania">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#widze-bad-value-type-class-str-must-match-with-type-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Widzę błąd: Value type &lt;class 'str'&gt; must match with type plot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bad-conda-is-not-recognized-w-terminalu-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błąd conda is not recognized w terminalu VS Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemy-z-jupyter-lab-notebooki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problemy z jupyter lab / notebooki
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problemy z jupyter lab / notebooki">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-startuje-ale-nie-dziaa-widze-okno-przegladarki-ale-jupyter-sie-nie-odpala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jupyter startuje, ale nie działa. Widzę okno przeglądarki, ale Jupyter się nie odpala
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiedy-uruchamiam-jupyter-lab-przez-terminal-pojawia-sie-nietypowy-bad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kiedy uruchamiam jupyter lab przez terminal pojawia się nietypowy błąd
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-stworzyc-nowe-srodowisko-conda-z-pliku-environmentyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak stworzyć nowe środowisko Conda z pliku environment.yml
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak stworzyć nowe środowisko Conda z pliku environment.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pobierz-plik-environmentyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Pobierz plik environment.yml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-otworz-terminal-anaconda-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Otwórz terminal Anaconda Prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-przejdz-do-folderu-z-plikiem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Przejdź do folderu z plikiem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-utworz-srodowisko-na-podstawie-pliku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Utwórz środowisko na podstawie pliku
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-aktywuj-srodowisko" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Aktywuj środowisko
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-szybka-weryfikacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Szybka weryfikacja
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-jak-zaktualizowac-istniejace-srodowisko-z-nowego-pliku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7) Jak zaktualizować istniejące środowisko z nowego pliku?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-najczestsze-problemy-i-rozwiazania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8) Najczęstsze problemy i rozwiązania
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Studio Code - instalacja i konfiguracja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_streamlit_community_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlit Community Cloud - problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS - Amazon Web Services - rejestracja i konfiguracja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_digital_ocean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Ocean - rejestracja i konfiguracja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_google_meet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Meet - konfiguracja i problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git - problemy i podstawowe komendy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_misc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Różne - inne pytania i problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_anaconda_cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anaconda Cloud - problemy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_st_paywall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    St-paywall - nowa implementacja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jak-zainstalowac-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak zainstalować conda
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-skonfigurowac-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak skonfigurować conda
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak skonfigurować conda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jak-uatwic-sobie-prace-z-anaconda-prompt-na-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak ułatwić sobie pracę z Anaconda Prompt na Windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-ustawic-srodowisko-conda-do-pracy-z-visual-studio-code-i-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak ustawić środowisko conda do pracy z Visual Studio Code i PowerShell
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak ustawić środowisko conda do pracy z Visual Studio Code i PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#film-instruktazowy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Film instruktażowy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#komendy-do-skopiowania-i-wklejenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Komendy do skopiowania i wklejenia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zainstalowaem-i-skonfigurowaem-conde-jednak-folder-modul_3-jest-pusty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zainstalowałem i skonfigurowałem condę, jednak folder modul_3 jest pusty
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bedy-w-conda-przyczyny-i-rozwiazania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błędy w Conda - Przyczyny i rozwiązania
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Błędy w Conda - Przyczyny i rozwiązania">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#widze-bad-value-type-class-str-must-match-with-type-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Widzę błąd: Value type &lt;class 'str'&gt; must match with type plot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bad-conda-is-not-recognized-w-terminalu-vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Błąd conda is not recognized w terminalu VS Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemy-z-jupyter-lab-notebooki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problemy z jupyter lab / notebooki
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problemy z jupyter lab / notebooki">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-startuje-ale-nie-dziaa-widze-okno-przegladarki-ale-jupyter-sie-nie-odpala" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jupyter startuje, ale nie działa. Widzę okno przeglądarki, ale Jupyter się nie odpala
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kiedy-uruchamiam-jupyter-lab-przez-terminal-pojawia-sie-nietypowy-bad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kiedy uruchamiam jupyter lab przez terminal pojawia się nietypowy błąd
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jak-stworzyc-nowe-srodowisko-conda-z-pliku-environmentyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jak stworzyć nowe środowisko Conda z pliku environment.yml
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak stworzyć nowe środowisko Conda z pliku environment.yml">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pobierz-plik-environmentyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Pobierz plik environment.yml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-otworz-terminal-anaconda-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Otwórz terminal Anaconda Prompt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-przejdz-do-folderu-z-plikiem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Przejdź do folderu z plikiem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-utworz-srodowisko-na-podstawie-pliku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Utwórz środowisko na podstawie pliku
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-aktywuj-srodowisko" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Aktywuj środowisko
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-szybka-weryfikacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Szybka weryfikacja
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-jak-zaktualizowac-istniejace-srodowisko-z-nowego-pliku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7) Jak zaktualizować istniejące środowisko z nowego pliku?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-najczestsze-problemy-i-rozwiazania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8) Najczęstsze problemy i rozwiązania
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">Moduł 3</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">anaconda prompt</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">conda</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">jupyter lab</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">kernel</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">notebook</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">plot error</span>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+<h1 id="conda-instalacja-konfiguracja-i-bedy"><strong>Conda - instalacja, konfiguracja i błędy</strong><a class="headerlink" href="#conda-instalacja-konfiguracja-i-bedy" title="Permanent link">&para;</a></h1>
+<p><strong>Conda</strong> to narzędzie do zarządzania środowiskami w Pythonie. Dzięki niemu możemy łatwo instalować i zarządzać pakietami w Pythonie.</p>
+<h2 id="jak-zainstalowac-conda"><strong>Jak zainstalować conda</strong><a class="headerlink" href="#jak-zainstalowac-conda" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../assets/conda__installation_for_macos.pdf">Instrukcja instalacji conda pod Macos</a></li>
+<li><a href="../assets/conda__installation_for_windows.pdf">Instrukcja instalacji conda pod Windows</a></li>
+<li><a href="../assets/conda__installation_for_ubuntu.pdf">Instrukcja instalacji conda pod Ubuntu</a></li>
+</ul>
+<h2 id="jak-skonfigurowac-conda"><strong>Jak skonfigurować conda</strong><a class="headerlink" href="#jak-skonfigurowac-conda" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../assets/conda__configuration.pdf">Instrukcja konfiguracji conda</a></li>
+</ul>
+<h3 id="jak-uatwic-sobie-prace-z-anaconda-prompt-na-windows"><strong>Jak ułatwić sobie pracę z Anaconda Prompt na Windows</strong><a class="headerlink" href="#jak-uatwic-sobie-prace-z-anaconda-prompt-na-windows" title="Permanent link">&para;</a></h3>
+<div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Y_iqaAqZNkI?si=ZrlXfxIDaxktL85-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<h2 id="jak-ustawic-srodowisko-conda-do-pracy-z-visual-studio-code-i-powershell"><strong>Jak ustawić środowisko conda do pracy z Visual Studio Code i PowerShell</strong><a class="headerlink" href="#jak-ustawic-srodowisko-conda-do-pracy-z-visual-studio-code-i-powershell" title="Permanent link">&para;</a></h2>
+<p>Podczas pierwszej próby uruchomienia środowiska wirtualnego conda w terminalu VS Code może wystąpić następujący problem.</p>
+<div class="highlight"><pre><span></span><code>The term &#39;conda&#39; is not recognized as the name of a cmdlet, function, script file, or operable program.
+</code></pre></div>
+<p><img alt="" src="../assets/conda__is_not_recognized.png" /></p>
+<p><strong>Poniżej znajduje się film instruujący jak skonfigurować środowisko conda do pracy z Visual Studio Code i PowerShell.</strong></p>
+<p>W filmie zaprezentuję kilka komend. Umieszczam je pod filmem, żebyście mogli je łatwo skopiować i wkleić.</p>
+<h3 id="film-instruktazowy"><strong>Film instruktażowy</strong><a class="headerlink" href="#film-instruktazowy" title="Permanent link">&para;</a></h3>
+<p><strong>Tak jak wspominam w filmie, pamiętajcie o ponownym uruchomieniu komputera, po ustawieniu zmiennych środowiskowych.</strong></p>
+<div class="video-wrapper">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/fJwRbh-CTzw?si=Avwud5JEBSWy326T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<h3 id="komendy-do-skopiowania-i-wklejenia"><strong>Komendy do skopiowania i wklejenia</strong><a class="headerlink" href="#komendy-do-skopiowania-i-wklejenia" title="Permanent link">&para;</a></h3>
+<p><strong>Inicjalizacja condy w powershell</strong></p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>init<span class="w"> </span>powershell
+</code></pre></div>
+<p><strong>Ustawienie uprawnień do uruchamiania skryptów dla PowerShell</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div>
+<p><strong>Spradzenie wersji conda</strong></p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>--version
+</code></pre></div>
+<p><strong>Aktywacja środowiska wirtualnego conda</strong></p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>nazwa_środowiska
+</code></pre></div>
+<p><strong>Utworzenie nowego środowiska wirtualnego conda</strong></p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>nazwa_środowiska<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.11
+</code></pre></div>
+<p><strong>Deaktywacja środowiska wirtualnego conda</strong></p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+</code></pre></div>
+<p><strong>Kod testowej aplikacji w streamlit, do zapisania w pliku <code>app.py</code></strong></p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">streamlit</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">st</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Uruchomienie aplikacji w streamlit</strong></p>
+<div class="highlight"><pre><span></span><code>streamlit<span class="w"> </span>run<span class="w"> </span>app.py
+</code></pre></div>
+<h3 id="zainstalowaem-i-skonfigurowaem-conde-jednak-folder-modul_3-jest-pusty"><strong>Zainstalowałem i skonfigurowałem condę, jednak folder <code>modul_3</code> jest pusty</strong><a class="headerlink" href="#zainstalowaem-i-skonfigurowaem-conde-jednak-folder-modul_3-jest-pusty" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../assets/jupyter_lab_no_notebooks_main.png" /></p>
+<p>Na początku folder <code>modul_3</code> jest pusty, ale z każdą kolejną lekcją stopniowo go zapełnisz. Pod filmami znajdziesz pliki do pobrania (zazwyczaj będą to notebooki), które będziesz musiał dodać do folderu <code>modul_3</code>.</p>
+<p><img alt="" src="../assets/getting_started__tip_4__download_attachment.png" /></p>
+<p>Po pobraniu plików, przenieś je do folderu <code>modul_3</code>.
+Docelowo na końcu modułu Twój folder będzie wyglądał tak:</p>
+<p><img alt="" src="../assets/jupyter_lab_no_notebooks_already_with_notebooks.png" /></p>
+<h2 id="bedy-w-conda-przyczyny-i-rozwiazania"><strong>Błędy w Conda - Przyczyny i rozwiązania</strong><a class="headerlink" href="#bedy-w-conda-przyczyny-i-rozwiazania" title="Permanent link">&para;</a></h2>
+<p>'conda' to wszechstronne narzędzie do zarządzania środowiskami Python. Umożliwia ono łatwe instalowanie i zarządzanie pakietami, co znacząco ułatwia pracę z Pythonem. Niemniej jednak, podczas korzystania z conda można napotkać różne błędy. W tej sekcji znajdziesz przegląd najczęstszych problemów, ich możliwe przyczyny oraz sprawdzone sposoby na ich rozwiązanie.</p>
+<h3 id="widze-bad-value-type-class-str-must-match-with-type-plot"><strong>Widzę błąd: <code>Value type &lt;class 'str'&gt; must match with type plot</code></strong><a class="headerlink" href="#widze-bad-value-type-class-str-must-match-with-type-plot" title="Permanent link">&para;</a></h3>
+<p>Niektóre polecenia w Condzie działają poprawnie, ale gdy próbuję narysować wykres, pojawia się następujący błąd:</p>
+<p><img alt="" src="../assets/conda_errors_plot_error.png" /></p>
+<ol>
+<li>
+<p>Sprawdź nazwę folderu, w którym znajduje się używany notebook.</p>
+<ul>
+<li>Domyślnie w kursie jest on zapisany pod nazwą modul_*, gdzie gwiazdka oznacza numer modułu.</li>
+<li>Upewnij się, że nazwa Twojego folderu nie zawiera spacji (zamiast spacji warto użyć podkreślnika)</li>
+</ul>
+<p><img alt="" src="../assets/conda_errors_plot_error_folder_name.png" /></p>
+</li>
+<li>
+<p>Zrestartuj kernel i uruchom ponownie wszystkie komórki, zaczynając od pierwszej.</p>
+<p><img alt="" src="../assets/conda_errors_plot_error_kernel_restart.png" /></p>
+</li>
+</ol>
+<p>Dla zainteresowanych: przyczyną występowania błędu jest walidacja w bibliotece <a href="https://github.com/Sinaptik-AI/pandas-ai/blob/e011e8ffdc8a2cd88db07c4440f331540a175648/pandasai/helpers/output_validator.py#L99">pandasai</a>.</p>
+<h3 id="bad-conda-is-not-recognized-w-terminalu-vs-code"><strong>Błąd <code>conda is not recognized</code> w terminalu VS Code</strong><a class="headerlink" href="#bad-conda-is-not-recognized-w-terminalu-vs-code" title="Permanent link">&para;</a></h3>
+<p>Problem występuje podczas próby aktywacji środowiska wirtualnego conda w terminalu VS Code. System wyświetla komunikat:</p>
+<div class="highlight"><pre><span></span><code>The term &#39;conda&#39; is not recognized as the name of a cmdlet, function, script file, or operable program.
+</code></pre></div>
+<p><img alt="" src="../assets/conda__is_not_recognized.png" /></p>
+<p><strong>Przyczyna:</strong>
+Terminal VS Code nie ma skonfigurowanego dostępu do poleceń conda, ponieważ PowerShell nie został zainicjalizowany z Anacondą.</p>
+<p><strong>Rozwiązanie:</strong></p>
+<p><strong>Metoda 1 - Restart terminala:</strong></p>
+<ol>
+<li>Zamknij terminal w VS Code (kliknij ikonę kosza).
+   <img alt="" src="../assets/conda__kill_terminal.png" /></li>
+<li>Otwórz nowy terminal i poczekaj kilka sekund na pełne wczytanie.
+   <img alt="" src="../assets/conda__new_terminal.png" /></li>
+<li>Spróbuj ponownie aktywować środowisko.</li>
+</ol>
+<p><strong>Metoda 2 - Inicjalizacja conda (jeśli metoda 1 nie pomogła):</strong></p>
+<ol>
+<li>Zamknij VS Code.</li>
+<li>
+<p>Otwórz <strong>Windows PowerShell</strong> jako administrator:</p>
+<ul>
+<li>Kliknij prawym przyciskiem myszy na ikonę <strong>Windows PowerShell</strong></li>
+<li>Wybierz opcję <strong>"Uruchom jako administrator"</strong> (lub <strong>"Run as administrator"</strong> w zależności od języka systemowego)</li>
+</ul>
+<p><img alt="" src="../assets/conda__powershell_run_as_administrator.png" /></p>
+</li>
+<li>
+<p>Sprawdź aktualne ustawienia ExecutionPolicy (uprawnienia do uruchamiania skryptów):
+    <div class="highlight"><pre><span></span><code><span class="nb">Get-ExecutionPolicy</span>
+</code></pre></div></p>
+</li>
+<li>Jeśli wynik to <code>Restricted</code> lub <code>Undefined</code>, zmień na <code>RemoteSigned</code>:
+    <div class="highlight"><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
+</code></pre></div></li>
+<li>Potwierdź zmianę wpisując <code>Y</code> i naciśnij Enter.</li>
+<li>Sprawdź czy ustawienia zostały zmienione (powinny być <code>RemoteSigned</code>):
+    <div class="highlight"><pre><span></span><code><span class="nb">Get-ExecutionPolicy</span>
+</code></pre></div></li>
+<li>Otwórz <strong>Anaconda Prompt</strong> (również jako administrator).</li>
+<li>Wykonaj inicjalizację PowerShell:
+    <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>init<span class="w"> </span>powershell
+</code></pre></div></li>
+<li>
+<p>Otwórz ponownie VS Code i użyj nowego terminala (kliknij ikonę kosza i otwórz nowy terminal - sposób opisany w <strong>Metoda 1 - Restart terminala</strong>).</p>
+<blockquote>
+<p><strong>⚠️ UWAGA:</strong> Odczekaj około 30 sekund na pełne wczytanie terminala i wszystkich procesów.</p>
+</blockquote>
+</li>
+<li>
+<p>Sprawdź czy conda działa poprawnie:
+    <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>--version
+</code></pre></div></p>
+</li>
+<li>Jeśli wszystko działa poprawnie (powinna się pojawić wersja conda), aktywuj swoje środowisko wirtualne:
+    <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>nazwa_środowiska
+</code></pre></div></li>
+</ol>
+<h2 id="problemy-z-jupyter-lab-notebooki"><strong>Problemy z jupyter lab / notebooki</strong><a class="headerlink" href="#problemy-z-jupyter-lab-notebooki" title="Permanent link">&para;</a></h2>
+<p><strong>Jupyter lab</strong> to interaktywne środowisko do pracy z notatnikami jupyter. Pozwala na pracę z wieloma notatnikami jednocześnie, a także na przeglądanie plików, terminal, konsolę pythona i wiele innych.</p>
+<h3 id="jupyter-startuje-ale-nie-dziaa-widze-okno-przegladarki-ale-jupyter-sie-nie-odpala"><strong>Jupyter startuje, ale nie działa. Widzę okno przeglądarki, ale Jupyter się nie odpala</strong><a class="headerlink" href="#jupyter-startuje-ale-nie-dziaa-widze-okno-przegladarki-ale-jupyter-sie-nie-odpala" title="Permanent link">&para;</a></h3>
+<p>Może oznaczać, że masz zablokowane wyskakujące okna w przeglądarce. Spróbuj uruchomić Jupyter Notebook bezpośrednio z uprawnieniami administratora. Następnie pojawi się konsola, w której będzie widać logi Jupyter Notebooka, które zawierają link do notebooka. Skopiuj ten link i wklej go do przeglądarki. Link powinien wyglądać mniej więcej tak:</p>
+<p><code>http://localhost:8888/tree?token=f7e5908823221f7bc83e0382337300e6bbe552e2013cc27f</code></p>
+<p>Twój token będzie inny!</p>
+<p><img alt="" src="../assets/jupyter_lab__open.png" /></p>
+<h3 id="kiedy-uruchamiam-jupyter-lab-przez-terminal-pojawia-sie-nietypowy-bad"><strong>Kiedy uruchamiam <em>jupyter lab</em> przez terminal pojawia się nietypowy błąd</strong><a class="headerlink" href="#kiedy-uruchamiam-jupyter-lab-przez-terminal-pojawia-sie-nietypowy-bad" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../assets/jupyter_lab__second_opening_error.png" /></p>
+<p>Jeśli podczas uruchamiania <em>jupyter lab</em> w konsoli pojawia się taki błąd, oznacza to, że nie aktywowałeś swojego środowiska Conda. Aby to zrobić:</p>
+<ol>
+<li>
+<p>Najpierw aktywuj swoje środowisko, wpisując <code>conda activate od_zera_do_ai</code> (domyślnie według kursu). Zauważysz wtedy, że środowisko zostało zmienione z domyślnego 'base' na Twoje własne.</p>
+<p><img alt="" src="../assets/jupyter_lab__second_opening_activate_environment.png" /></p>
+</li>
+<li>
+<p>Następnie przejdź do folderu z Twoimi notebookami (domyślnie w kursie jest to folder na pulpicie o nazwie <em>od_zera_do_ai</em>) i skopiuj jego ścieżkę.</p>
+<p><img alt="" src="../assets/jupyter_lab__second_opening_folder_path.png" /></p>
+</li>
+<li>
+<p>Przejdź do tego folderu w konsoli, używając komendy <code>cd</code> i wklejając jego ścieżkę</p>
+<p><img alt="" src="../assets/jupyter_lab__second_opening_write_path_to_console.png" /></p>
+</li>
+<li>
+<p>Na koniec uruchom <code>jupyter lab</code></p>
+<p><img alt="" src="../assets/jupyter_lab__second_opening_run_jupyter.png" /></p>
+</li>
+</ol>
+<h2 id="jak-stworzyc-nowe-srodowisko-conda-z-pliku-environmentyml"><strong>Jak stworzyć nowe środowisko Conda z pliku <code>environment.yml</code></strong><a class="headerlink" href="#jak-stworzyc-nowe-srodowisko-conda-z-pliku-environmentyml" title="Permanent link">&para;</a></h2>
+<p>Poniższa instrukcja pokazuje, jak utworzyć gotowe środowisko na podstawie przygotowanego pliku <code>environment.yml</code>. To najprostszy sposób, aby wszyscy mieli identyczną konfigurację pakietów.</p>
+<h3 id="1-pobierz-plik-environmentyml"><strong>1) Pobierz plik <code>environment.yml</code></strong><a class="headerlink" href="#1-pobierz-plik-environmentyml" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pobierz plik:</strong> <a href="../assets/environment.yml" download>environment.yml</a></li>
+<li>Zapisz plik w wybranym folderze (np. <code>Pulpit/od_zera_do_ai</code>).</li>
+</ul>
+<h3 id="2-otworz-terminal-anaconda-prompt"><strong>2) Otwórz terminal Anaconda Prompt</strong><a class="headerlink" href="#2-otworz-terminal-anaconda-prompt" title="Permanent link">&para;</a></h3>
+<h3 id="3-przejdz-do-folderu-z-plikiem"><strong>3) Przejdź do folderu z plikiem</strong><a class="headerlink" href="#3-przejdz-do-folderu-z-plikiem" title="Permanent link">&para;</a></h3>
+<p>Uruchom w terminalu Anaconda Prompt następującą komendę:</p>
+<p>dla Windows:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>C:<span class="se">\U</span>sers<span class="se">\T</span>wojeImie<span class="se">\D</span>esktop<span class="se">\o</span>d_zera_do_ai
+</code></pre></div>
+<p>dla macOS/Linux:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/Desktop/od_zera_do_ai
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Uwaga</p>
+<p>Tutaj wstaw <strong>swoją</strong> ścieżkę do folderu!</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Szybciej z uzupełnianiem ścieżki</p>
+<p>Zamiast ręcznie wpisywać ścieżkę do folderu, po wpisaniu <code>cd</code> i spacji możesz po prostu przeciągnąć folder <code>od_zera_do_ai</code> do terminala — ścieżka zostanie wtedy automatycznie uzupełniona.</p>
+</div>
+<p>Upewnij się, że w tym folderze (w tym projekcie <code>od_zera_do_ai</code>) znajduje się pobrany wcześniej plik <code>environment.yml</code>.</p>
+<h3 id="4-utworz-srodowisko-na-podstawie-pliku"><strong>4) Utwórz środowisko na podstawie pliku</strong><a class="headerlink" href="#4-utworz-srodowisko-na-podstawie-pliku" title="Permanent link">&para;</a></h3>
+<p>Wybierz odpowiednią komendę:</p>
+<ul>
+<li>domyślnie zostanie użyta nazwa środowiska wskazana w pliku (<code>od_zera_do_ai_v2</code>):</li>
+</ul>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
+</code></pre></div>
+<ul>
+<li>jeśli chcesz wymusić własną nazwę środowiska:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml<span class="w"> </span>-n<span class="w"> </span>moja_nazwa_srodowiska
+</code></pre></div>
+<p>Podczas instalacji Conda może poprosić o potwierdzenie – wpisz <code>y</code> i naciśnij Enter.</p>
+<div class="admonition warning">
+<p class="admonition-title">Uwaga</p>
+<p>Cały proces może zająć nawet około 10 minut. Zależy to od szybkości internetu i mocy komputera. Zatem nie zamykaj terminala ani nie zamykaj środowiska przed jego zakończeniem.</p>
+</div>
+<h3 id="5-aktywuj-srodowisko"><strong>5) Aktywuj środowisko</strong><a class="headerlink" href="#5-aktywuj-srodowisko" title="Permanent link">&para;</a></h3>
+<p>Po pomyślnym zakończeniu instalacji, aktywuj środowisko:</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>od_zera_do_ai_v2
+</code></pre></div>
+<p>Jeśli użyłeś własnej nazwy, aktywuj odpowiednio: <code>conda activate moja_nazwa_srodowiska</code>.</p>
+<h3 id="6-szybka-weryfikacja"><strong>6) Szybka weryfikacja</strong><a class="headerlink" href="#6-szybka-weryfikacja" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>list
+python<span class="w"> </span>--version
+jupyter<span class="w"> </span>lab<span class="w"> </span>--version
+</code></pre></div>
+<p>Jeżeli widzisz listę pakietów i wersje poleceń się wyświetlają – środowisko działa.</p>
+<h3 id="7-jak-zaktualizowac-istniejace-srodowisko-z-nowego-pliku"><strong>7) Jak zaktualizować istniejące środowisko z nowego pliku?</strong><a class="headerlink" href="#7-jak-zaktualizowac-istniejace-srodowisko-z-nowego-pliku" title="Permanent link">&para;</a></h3>
+<p>Gdy plik <code>environment.yml</code> zostanie zaktualizowany (np. dojdą pakiety), zaktualizuj swoje środowisko:</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>env<span class="w"> </span>update<span class="w"> </span>-f<span class="w"> </span>environment.yml<span class="w"> </span>--prune
+</code></pre></div>
+<p>Flaga <code>--prune</code> usuwa pakiety, które nie występują już w pliku.</p>
+<h3 id="8-najczestsze-problemy-i-rozwiazania"><strong>8) Najczęstsze problemy i rozwiązania</strong><a class="headerlink" href="#8-najczestsze-problemy-i-rozwiazania" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>conda is not recognized</code></strong>: zainicjalizuj Condę w PowerShell albo użyj Anaconda Prompt (patrz sekcja wyżej o konfiguracji Condy).</li>
+<li><strong><code>SpecNotFound: environment.yml</code></strong>: upewnij się, że jesteś w katalogu z plikiem (<code>dir</code> na Windows lub <code>ls</code> na macOS/Linux).</li>
+<li><strong>Środowisko już istnieje</strong>: użyj aktualizacji (<code>conda env update -f environment.yml --prune</code>) albo usuń stare środowisko i utwórz ponownie:
+  <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>-n<span class="w"> </span>od_zera_do_ai_v2
+conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
+</code></pre></div></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
